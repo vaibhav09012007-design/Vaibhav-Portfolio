@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Vaibhav Tiwari</title>
+    <meta
+      name="description"
+      content="Learn more about Vaibhav Tiwari - Full Stack Developer and Tech Lead."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Outfit:wght@300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="style.css?v=1.2" />
+  </head>
+  <body>
+    <div class="space-background"></div>
+
+    <header>
+      <div class="container nav-container">
+        <a href="index.html" class="logo text-gradient">VT</a>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="about.html" class="nav-link active">About</a></li>
+            <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+            <li><a href="projects.html" class="nav-link">Projects</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+        <button
+          class="mobile-menu-toggle"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <a href="resume.html" class="btn btn-primary" target="_blank">Resume</a>
+      </div>
+    </header>
+
+    <main class="container page-main">
+      <section style="padding-bottom: 40px">
+        <h1 class="section-title">About Me</h1>
+
+        <div class="card" style="max-width: 800px">
+          <p
+            style="
+              font-size: 1.1rem;
+              color: var(--text-secondary);
+              margin-bottom: 1.5rem;
+              line-height: 1.8;
+            "
+          >
+            I'm Vaibhav Tiwari, a
+            <span class="text-accent">19-year-old Full Stack Developer</span>
+            based in India. I've been coding for over 1 year, turning complex
+            problems into elegant, scalable web applications.
+          </p>
+
+          <p
+            style="
+              color: var(--text-muted);
+              margin-bottom: 2rem;
+              line-height: 1.8;
+            "
+          >
+            My strength lies in building complete digital solutions from
+            scratch. Whether it's designing a pixel-perfect frontend with
+            <strong>React & Tailwind</strong> or architecting a robust backend
+            with <strong>Node.js</strong>, I love the entire process of bringing
+            ideas to life on the web.
+          </p>
+
+          <h3 class="text-accent font-mono" style="margin-bottom: 1rem">
+            // Core Focus
+          </h3>
+          <ul
+            style="
+              color: var(--text-secondary);
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+              gap: 12px;
+            "
+          >
+            <li>→ Full Stack Web Development</li>
+            <li>→ Responsive UI/UX Design</li>
+            <li>→ RESTful API Architecture</li>
+            <li>→ Database Management</li>
+            <li>→ Performance Optimization</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>© 2026 Vaibhav Tiwari</p>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>

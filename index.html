@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Vaibhav Tiwari, a 19-year-old Full Stack Developer specializing in React, Node.js, and modern web technologies."
+    />
+    <meta name="theme-color" content="#030014" />
+    <title>Vaibhav Tiwari | Full Stack Developer</title>
+
+    <!-- Open Graph / SEO -->
+    <meta property="og:title" content="Vaibhav Tiwari | Full Stack Developer" />
+    <meta
+      property="og:description"
+      content="19-year-old Full Stack Developer building scalable web applications."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://VaibhavFolio.com" />
+    <meta property="og:image" content="profile.jpg" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Vaibhav Tiwari | Full Stack Developer"
+    />
+    <meta
+      name="twitter:description"
+      content="19-year-old Full Stack Developer building scalable web applications."
+    />
+    <meta name="twitter:image" content="profile.jpg" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Outfit:wght@300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="style.css?v=1.2" />
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Vaibhav Tiwari",
+        "jobTitle": "Full Stack Developer",
+        "url": "https://VaibhavFolio.com",
+        "sameAs": [
+          "https://github.com/vaibhav09012007-design",
+          "https://linkedin.com/in/vaibhav-tiwari",
+          "https://x.com/AsterismVaibhav"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Background Elements -->
+    <div class="stars"></div>
+    <div class="grid-bg"></div>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <header>
+      <div class="container nav-container">
+        <a href="index.html" class="logo text-gradient">VT</a>
+        <nav aria-label="Main navigation">
+          <ul class="nav-links" role="list">
+            <li role="listitem">
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+            <li role="listitem">
+              <a href="#skills" class="nav-link">Skills</a>
+            </li>
+            <li role="listitem">
+              <a href="projects.html" class="nav-link">Projects</a>
+            </li>
+            <li role="listitem">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <button
+          class="mobile-menu-toggle"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <a
+          href="resume.html"
+          class="btn btn-primary"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Resume</a
+        >
+      </div>
+    </header>
+
+    <main>
+      <section class="hero container">
+        <div class="hero-content">
+          <p class="text-accent font-mono">:: System Online ::</p>
+          <h1 class="hero-title">Vaibhav Tiwari</h1>
+          <h2 class="hero-subtitle">
+            <span class="text-accent">Full Stack Developer</span>
+          </h2>
+          <nav class="social-links" aria-label="Social media links">
+            <a
+              href="https://github.com/vaibhav09012007-design"
+              target="_blank"
+              class="social-link"
+              aria-label="GitHub Profile"
+              rel="noopener noreferrer"
+              >GitHub</a
+            >
+            <a
+              href="https://linkedin.com/in/vaibhav-tiwari"
+              target="_blank"
+              class="social-link"
+              aria-label="LinkedIn Profile"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+            <a
+              href="https://x.com/AsterismVaibhav"
+              target="_blank"
+              class="social-link"
+              aria-label="X Profile"
+              rel="noopener noreferrer"
+              >X / Twitter</a
+            >
+            <a
+              href="mailto:vaibhav09012007@gmail.com"
+              class="social-link"
+              aria-label="Email Contact"
+              >Email</a
+            >
+          </nav>
+
+          <div class="cta-group">
+            <a href="projects.html" class="btn btn-primary"
+              >View Projects &rarr;</a
+            >
+            <a href="contact.html" class="btn btn-secondary">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="solar-system">
+            <div class="orbit orbit-1">
+              <div class="planet planet-1" data-skill="React">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#61DAFB"
+                  stroke-width="2"
+                >
+                  <circle cx="12" cy="12" r="2" />
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="orbit orbit-2">
+              <div class="planet planet-2" data-skill="Node.js">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#68A063"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M12 2L2 7l10 5 10-5-10-5zm0 9l2-1-2-1-2 1 2 1zm0 2l-10 5 10 5 10-5-10-5z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="orbit orbit-3">
+              <div class="planet planet-3" data-skill="Python">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#FFD43B"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+                  />
+                  <path d="M12 6v12M6 12h12" />
+                </svg>
+              </div>
+            </div>
+            <div class="orbit orbit-4">
+              <div class="planet planet-4" data-skill="TypeScript">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#3178C6"
+                  stroke-width="2"
+                >
+                  <rect x="3" y="3" width="18" height="18" rx="2" />
+                  <path d="M12 8v8M8 12h8" />
+                </svg>
+              </div>
+            </div>
+            <div class="orbit orbit-5">
+              <div class="planet planet-5" data-skill="PostgreSQL">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#336791"
+                  stroke-width="2"
+                >
+                  <ellipse cx="12" cy="6" rx="8" ry="3" />
+                  <path d="M4 6v6c0 1.66 3.58 3 8 3s8-1.34 8-3V6" />
+                  <path d="M4 12v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6" />
+                </svg>
+              </div>
+            </div>
+            <div class="orbit orbit-6">
+              <div class="planet planet-6" data-skill="Docker">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#2496ED"
+                  stroke-width="2"
+                >
+                  <rect x="2" y="10" width="4" height="4" />
+                  <rect x="7" y="10" width="4" height="4" />
+                  <rect x="12" y="10" width="4" height="4" />
+                  <rect x="7" y="5" width="4" height="4" />
+                  <path d="M20 12c2-2 2-6-2-6" />
+                </svg>
+              </div>
+            </div>
+            <div class="sun">
+              <div class="sun-profile">
+                <!-- Replace 'profile.jpg' with your actual image file -->
+                <img
+                  src="profile.jpg"
+                  alt="Vaibhav Tiwari Profile Picture"
+                  class="profile-img"
+                  loading="eager"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="#skills" class="scroll-indicator" aria-label="Scroll down">
+          <div class="scroll-arrow"></div>
+        </a>
+      </section>
+
+      <section id="skills" class="container">
+        <h2 class="section-title">Technical Arsenal</h2>
+        <div class="skills-grid">
+          <!-- FRONTEND CARD -->
+          <div class="card skill-card">
+            <div class="card-header">
+              <h3>Frontend Development</h3>
+              <div class="icon-box">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M3 3h18v18H3zM3 9h18M9 21V9"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="skill-items">
+              <div class="skill-item">
+                <span class="skill-name">React.js</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Next.js</span>
+                <span class="skill-level">Intermediate</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">TypeScript</span>
+                <span class="skill-level">Intermediate</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Tailwind CSS</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Three.js</span>
+                <span class="skill-level">Basic</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Vue.js</span>
+                <span class="skill-level">Intermediate</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- BACKEND CARD -->
+          <div class="card skill-card">
+            <div class="card-header">
+              <h3>Backend Development</h3>
+              <div class="icon-box">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"
+                  />
+                  <path d="M3.27 6.96 12 12.01l8.73-5.05M12 22.08V12" />
+                </svg>
+              </div>
+            </div>
+            <div class="skill-items">
+              <div class="skill-item">
+                <span class="skill-name">Node.js</span>
+                <span class="skill-level">Intermediate</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Python</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Go (Golang)</span>
+                <span class="skill-level">Basic</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">PostgreSQL</span>
+                <span class="skill-level">Intermediate</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">MongoDB</span>
+                <span class="skill-level">Basic</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Redis</span>
+                <span class="skill-level">Basic</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-extra">
+          <h3 class="skills-extra-title">Other Tools & Technologies</h3>
+          <div class="skills-tags">
+            <span class="skill-tag">Git / GitHub</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Linux</span>
+            <span class="skill-tag">Nginx</span>
+            <span class="skill-tag">Figma</span>
+            <span class="skill-tag">OpenAI API</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+          <!-- Project 1: Nexus -->
+          <div class="card coming-soon" data-project="Nexus">
+            <div class="card-header">
+              <h3 style="font-size: 1.5rem; margin-bottom: 0">Nexus</h3>
+              <span class="badge">Coming Soon</span>
+            </div>
+            <p
+              class="font-mono text-accent"
+              style="
+                font-size: 0.85rem;
+                margin-bottom: 1rem;
+                margin-top: 0.5rem;
+              "
+            >
+              GAMING • COMMUNITY • WEB3
+            </p>
+            <p style="color: var(--text-muted); margin-bottom: 1.5rem">
+              Next-generation gaming hub connecting players and developers.
+              Features real-time tournaments, community features, and asset
+              trading.
+            </p>
+            <div style="display: flex; gap: 16px">
+              <span class="text-muted">In Development</span>
+            </div>
+          </div>
+
+          <!-- Project 2: AI File Converter -->
+          <div class="card coming-soon" data-project="AI File Converter">
+            <div class="card-header">
+              <h3 style="font-size: 1.5rem; margin-bottom: 0">
+                AI File Converter
+              </h3>
+              <span class="badge">Coming Soon</span>
+            </div>
+            <p
+              class="font-mono text-accent"
+              style="
+                font-size: 0.85rem;
+                margin-bottom: 1rem;
+                margin-top: 0.5rem;
+              "
+            >
+              PYTHON • REACT • FILE PROCESSING
+            </p>
+            <p style="color: var(--text-muted); margin-bottom: 1.5rem">
+              Intelligent file transformation tool. Converts documents to PDF
+              and more, preserving formatting with high accuracy.
+            </p>
+            <div style="display: flex; gap: 16px">
+              <span class="text-muted">In Development</span>
+            </div>
+          </div>
+
+          <!-- Project 3: Crypto Wallet -->
+          <div class="card coming-soon" data-project="Crypto Wallet">
+            <div class="card-header">
+              <h3 style="font-size: 1.5rem; margin-bottom: 0">Crypto Wallet</h3>
+              <span class="badge">Coming Soon</span>
+            </div>
+            <p
+              class="font-mono text-accent"
+              style="
+                font-size: 0.85rem;
+                margin-bottom: 1rem;
+                margin-top: 0.5rem;
+              "
+            >
+              BLOCKCHAIN • NODE.JS • SECURITY
+            </p>
+            <p style="color: var(--text-muted); margin-bottom: 1.5rem">
+              Secure and intuitive digital wallet for managing cryptocurrency
+            </p>
+            <div style="display: flex; gap: 16px">
+              <span class="text-muted">In Development</span>
+            </div>
+          </div>
+        </div>
+        <div class="projects-footer">
+          <a href="projects.html" class="btn btn-secondary"
+            >View All Projects &rarr;</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>© <time datetime="2026">2026</time> Vaibhav Tiwari</p>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
