@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Vaibhav Tiwari</title>
+    <meta
+      name="description"
+      content="Learn more about Vaibhav Tiwari - Full Stack Developer specializing in building scalable web applications."
+    />
+    <meta name="theme-color" content="#030014" />
+    <link rel="canonical" href="https://vaibhavfolio.web.app/about.html" />
+
+    <!-- Open Graph / SEO -->
+    <meta property="og:title" content="About | Vaibhav Tiwari" />
+    <meta
+      property="og:description"
+      content="Learn more about Vaibhav Tiwari - Full Stack Developer specializing in building scalable web applications."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://vaibhavfolio.web.app/about.html" />
+    <meta property="og:image" content="https://vaibhavfolio.web.app/og-image.jpg" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="About | Vaibhav Tiwari" />
+    <meta
+      name="twitter:description"
+      content="Learn more about Vaibhav Tiwari - Full Stack Developer specializing in building scalable web applications."
+    />
+    <meta name="twitter:image" content="https://vaibhavfolio.web.app/og-image.jpg" />
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="style.css?v=2.0" as="style" />
+    <link rel="preload" href="main.js?v=2.0" as="script" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Outfit:wght@300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="style.css?v=2.0" />
+  </head>
+  <body>
+    <!-- Skip to content for accessibility -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen" aria-hidden="true">
+      <div class="loader">
+        <div class="loader-ring"></div>
+        <span class="loader-text font-mono">Initializing System...</span>
+      </div>
+    </div>
+
+    <div class="space-background"></div>
+
+    <header>
+      <div class="container nav-container">
+        <a href="index.html" class="logo text-gradient" aria-label="Home">VT</a>
+        <nav aria-label="Main navigation">
+          <ul class="nav-links" role="list">
+            <li role="listitem">
+              <a href="about.html" class="nav-link active" aria-current="page">About</a>
+            </li>
+            <li role="listitem">
+              <a href="index.html#skills" class="nav-link">Skills</a>
+            </li>
+            <li role="listitem">
+              <a href="projects.html" class="nav-link">Projects</a>
+            </li>
+            <li role="listitem">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <button
+          class="mobile-menu-toggle"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="nav-links"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <a href="resume.html" class="btn btn-primary header-resume-btn" aria-label="View Resume">Resume</a>
+      </div>
+    </header>
+
+    <main id="main-content" class="container page-main">
+      <section style="padding-bottom: 40px">
+        <h1 class="section-title">About Me</h1>
+
+        <div class="card reveal-on-scroll" style="max-width: 800px">
+          <p
+            style="
+              font-size: 1.1rem;
+              color: var(--text-secondary);
+              margin-bottom: 1.5rem;
+              line-height: 1.8;
+            "
+          >
+            I'm Vaibhav Tiwari, a
+            <span class="text-accent">19-year-old Full Stack Developer</span>
+            based in India. I've been coding for over 1 year, turning complex
+            problems into elegant, scalable web applications.
+          </p>
+
+          <p
+            style="
+              color: var(--text-muted);
+              margin-bottom: 2rem;
+              line-height: 1.8;
+            "
+          >
+            My strength lies in building complete digital solutions from
+            scratch. Whether it's designing a pixel-perfect frontend with
+            <strong>React & Tailwind</strong> or architecting a robust backend
+            with <strong>Node.js</strong>, I love the entire process of bringing
+            ideas to life on the web.
+          </p>
+
+          <h3 class="text-accent font-mono" style="margin-bottom: 1rem">
+            // Core Focus
+          </h3>
+          <ul
+            style="
+              color: var(--text-secondary);
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+              gap: 12px;
+            "
+          >
+            <li>→ Full Stack Web Development</li>
+            <li>→ Responsive UI/UX Design</li>
+            <li>→ RESTful API Architecture</li>
+            <li>→ Database Management</li>
+            <li>→ Performance Optimization</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Experience Timeline -->
+      <section>
+        <h2 class="section-title reveal-on-scroll">Journey</h2>
+        <div class="timeline reveal-on-scroll">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">2025 - Present</div>
+              <h3>Freelance Full Stack Developer</h3>
+              <div class="timeline-company text-accent">Self-Employed</div>
+              <p class="timeline-desc">
+                Building custom web applications for clients using React, Node.js, and modern web technologies.
+                Specializing in performance optimization and responsive design.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">2024 - 2025</div>
+              <h3>Web Development Learning & Projects</h3>
+              <div class="timeline-company text-accent">Self-Taught</div>
+              <p class="timeline-desc">
+                Intensive self-study and project-based learning. Completed multiple full-stack projects
+                showcasing proficiency in frontend and backend technologies.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-content">
+        <div class="footer-main">
+          <p>&copy; <time datetime="2026">2026</time> Vaibhav Tiwari. Built with passion.</p>
+        </div>
+        <div class="footer-links">
+          <a href="https://github.com/vaibhav09012007-design" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
+          <a href="https://linkedin.com/in/vaibhav-tiwari" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+          <a href="https://x.com/AsterismVaibhav" target="_blank" rel="noopener noreferrer" aria-label="Twitter">Twitter</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top" hidden>
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <path d="M18 15l-6-6-6 6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+
+    <script src="main.js?v=2.0"></script>
+  </body>
+</html>

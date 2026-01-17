@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Vaibhav Tiwari</title>
+    <meta
+      name="description"
+      content="Get in touch with Vaibhav Tiwari for collaborations and opportunities."
+    />
+    <meta name="theme-color" content="#030014" />
+    <link rel="canonical" href="https://vaibhavfolio.web.app/contact.html" />
+
+    <!-- Open Graph / SEO -->
+    <meta property="og:title" content="Contact | Vaibhav Tiwari" />
+    <meta
+      property="og:description"
+      content="Get in touch with Vaibhav Tiwari for collaborations and opportunities."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://vaibhavfolio.web.app/contact.html" />
+    <meta property="og:image" content="https://vaibhavfolio.web.app/og-image.jpg" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Contact | Vaibhav Tiwari" />
+    <meta
+      name="twitter:description"
+      content="Get in touch with Vaibhav Tiwari for collaborations and opportunities."
+    />
+    <meta name="twitter:image" content="https://vaibhavfolio.web.app/og-image.jpg" />
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="style.css?v=2.0" as="style" />
+    <link rel="preload" href="main.js?v=2.0" as="script" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Outfit:wght@300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="style.css?v=2.0" />
+  </head>
+  <body>
+    <!-- Skip to content for accessibility -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen" aria-hidden="true">
+      <div class="loader">
+        <div class="loader-ring"></div>
+        <span class="loader-text font-mono">Initializing System...</span>
+      </div>
+    </div>
+
+    <div class="space-background"></div>
+
+    <header>
+      <div class="container nav-container">
+        <a href="index.html" class="logo text-gradient" aria-label="Home">VT</a>
+        <nav aria-label="Main navigation">
+          <ul class="nav-links" role="list">
+            <li role="listitem"><a href="about.html" class="nav-link">About</a></li>
+            <li role="listitem"><a href="index.html#skills" class="nav-link">Skills</a></li>
+            <li role="listitem"><a href="projects.html" class="nav-link">Projects</a></li>
+            <li role="listitem"><a href="contact.html" class="nav-link active" aria-current="page">Contact</a></li>
+          </ul>
+        </nav>
+        <button
+          class="mobile-menu-toggle"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="nav-links"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <a href="resume.html" class="btn btn-primary header-resume-btn" aria-label="View Resume">Resume</a>
+      </div>
+    </header>
+
+    <main id="main-content" class="container page-main">
+      <section class="contact-section">
+        <h1 class="section-title">Get In Touch</h1>
+
+        <p class="contact-text">
+          I'm currently open for new opportunities and interesting projects.
+          Whether you have a question or just want to say hi, I'll try my best
+          to get back to you!
+        </p>
+
+        <div style="display: grid; grid-template-columns: 1fr; gap: 40px; text-align: left; margin-bottom: 2rem;">
+
+          <!-- Contact Form -->
+          <div class="card reveal-on-scroll">
+            <h3 class="text-accent font-mono" style="margin-bottom: 1.5rem">
+              // Send a Message
+            </h3>
+            <form action="https://formspree.io/f/xpwzwqbl" method="POST" class="contact-form">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required placeholder="Your Name" />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="your.email@example.com" />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required placeholder="What's on your mind?"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+                Send Message &rarr;
+              </button>
+            </form>
+          </div>
+
+          <!-- Direct Links -->
+          <div class="card reveal-on-scroll">
+            <h3 class="text-accent font-mono" style="margin-bottom: 1.5rem">
+              // Direct Channels
+            </h3>
+            <ul style="display: flex; flex-direction: column; gap: 16px">
+              <li>
+                <a
+                  href="mailto:vaibhav09012007@gmail.com"
+                  class="contact-direct-link"
+                >
+                  ✉ vaibhav09012007@gmail.com
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/vaibhav09012007-design"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="contact-direct-link"
+                >
+                  ⌘ GitHub: vaibhav09012007-design
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/vaibhav-tiwari"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="contact-direct-link"
+                >
+                  ⌘ LinkedIn: vaibhav-tiwari
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://x.com/AsterismVaibhav"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="contact-direct-link"
+                >
+                  ⌘ X/Twitter: @AsterismVaibhav
+                </a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-content">
+        <div class="footer-main">
+          <p>&copy; <time datetime="2026">2026</time> Vaibhav Tiwari. Built with passion.</p>
+        </div>
+        <div class="footer-links">
+          <a href="https://github.com/vaibhav09012007-design" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
+          <a href="https://linkedin.com/in/vaibhav-tiwari" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+          <a href="https://x.com/AsterismVaibhav" target="_blank" rel="noopener noreferrer" aria-label="Twitter">Twitter</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top" hidden>
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <path d="M18 15l-6-6-6 6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+
+    <script src="main.js?v=2.0"></script>
+  </body>
+</html>

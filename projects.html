@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | Vaibhav Tiwari</title>
+    <meta
+      name="description"
+      content="Portfolio of projects by Vaibhav Tiwari, featuring full-stack web applications and AI-powered tools."
+    />
+    <meta name="theme-color" content="#030014" />
+    <link rel="canonical" href="https://vaibhavfolio.web.app/projects.html" />
+
+    <!-- Open Graph / SEO -->
+    <meta property="og:title" content="Projects | Vaibhav Tiwari" />
+    <meta
+      property="og:description"
+      content="Portfolio of projects by Vaibhav Tiwari, featuring full-stack web applications and AI-powered tools."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://vaibhavfolio.web.app/projects.html" />
+    <meta property="og:image" content="https://vaibhavfolio.web.app/og-image.jpg" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Projects | Vaibhav Tiwari" />
+    <meta
+      name="twitter:description"
+      content="Portfolio of projects by Vaibhav Tiwari, featuring full-stack web applications and AI-powered tools."
+    />
+    <meta name="twitter:image" content="https://vaibhavfolio.web.app/og-image.jpg" />
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="style.css?v=2.0" as="style" />
+    <link rel="preload" href="main.js?v=2.0" as="script" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Outfit:wght@300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="style.css?v=2.0" />
+  </head>
+  <body>
+    <!-- Skip to content for accessibility -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen" aria-hidden="true">
+      <div class="loader">
+        <div class="loader-ring"></div>
+        <span class="loader-text font-mono">Loading Projects...</span>
+      </div>
+    </div>
+
+    <div class="space-background"></div>
+
+    <header>
+      <div class="container nav-container">
+        <a href="index.html" class="logo text-gradient" aria-label="Home">VT</a>
+        <nav aria-label="Main navigation">
+          <ul class="nav-links" role="list">
+            <li role="listitem"><a href="about.html" class="nav-link">About</a></li>
+            <li role="listitem"><a href="index.html#skills" class="nav-link">Skills</a></li>
+            <li role="listitem">
+              <a href="projects.html" class="nav-link active" aria-current="page">Projects</a>
+            </li>
+            <li role="listitem"><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+        <button
+          class="mobile-menu-toggle"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="nav-links"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <a href="resume.html" class="btn btn-primary header-resume-btn" aria-label="View Resume">Resume</a>
+      </div>
+    </header>
+
+    <main id="main-content" class="container page-main">
+      <section>
+        <h1 class="section-title">All Projects</h1>
+
+        <div class="projects-grid" style="max-width: 800px; margin: 0 auto;">
+          <!-- Project 1: Mind-Sync -->
+          <div class="card project-card reveal-on-scroll" data-project="Mind-Sync">
+            <div class="card-header">
+              <h3 class="project-card-title">Mind-Sync</h3>
+              <span class="badge badge-live">Live</span>
+            </div>
+            <p class="project-stack font-mono text-accent">
+              REACT • NODE.JS • AI • WELLNESS
+            </p>
+            <p class="project-description">
+              An AI-powered mental wellness and productivity application. Features mood tracking,
+              personalized insights, guided meditation, and smart scheduling to help users
+              maintain mental clarity and work-life balance.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/vaibhav09012007-design/Mind-Sync" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                GitHub &rarr;
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 2: Nexus -->
+          <div class="card coming-soon reveal-on-scroll" data-project="Nexus">
+            <div class="card-header">
+              <h3 class="project-card-title">Nexus</h3>
+              <span class="badge">Coming Soon</span>
+            </div>
+            <p
+              class="font-mono text-accent"
+              style="
+                font-size: 0.85rem;
+                margin-bottom: 1rem;
+                margin-top: 0.5rem;
+              "
+            >
+              GAMING • COMMUNITY • WEB3
+            </p>
+            <p style="color: var(--text-muted); margin-bottom: 1.5rem">
+              Next-generation gaming hub connecting players and developers.
+              Features real-time tournaments, community features, and asset
+              trading.
+            </p>
+            <div style="display: flex; gap: 16px">
+              <span class="text-muted">In Development</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-content">
+        <div class="footer-main">
+          <p>&copy; <time datetime="2026">2026</time> Vaibhav Tiwari. Built with passion.</p>
+        </div>
+        <div class="footer-links">
+          <a href="https://github.com/vaibhav09012007-design" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
+          <a href="https://linkedin.com/in/vaibhav-tiwari" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+          <a href="https://x.com/AsterismVaibhav" target="_blank" rel="noopener noreferrer" aria-label="Twitter">Twitter</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top" hidden>
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <path d="M18 15l-6-6-6 6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+
+    <script src="main.js?v=2.0"></script>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="modal-overlay" aria-hidden="true">
+      <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="modal-close" aria-label="Close modal">&times;</button>
+        <h2 id="modal-title">Project Title</h2>
+        <p id="modal-stack" class="font-mono text-accent"></p>
+        <div id="modal-body">
+          <p>Project description will appear here.</p>
+        </div>
+        <div
+          id="modal-links"
+          style="display: flex; gap: 16px; margin-top: 24px"
+        >
+          <!-- Links will be inserted here -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

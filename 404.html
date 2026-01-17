@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 - Page Not Found | Vaibhav Tiwari</title>
+    <meta name="theme-color" content="#030014" />
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="style.css?v=2.0" as="style" />
+    <link rel="preload" href="main.js?v=2.0" as="script" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Outfit:wght@300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="style.css?v=2.0" />
+  </head>
+  <body>
+    <!-- Skip to content for accessibility -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <div class="space-background"></div>
+
+    <header>
+      <div class="container nav-container">
+        <a href="index.html" class="logo text-gradient" aria-label="Home">VT</a>
+        <nav aria-label="Main navigation">
+          <ul class="nav-links" role="list">
+            <li role="listitem"><a href="about.html" class="nav-link">About</a></li>
+            <li role="listitem"><a href="index.html#skills" class="nav-link">Skills</a></li>
+            <li role="listitem"><a href="projects.html" class="nav-link">Projects</a></li>
+            <li role="listitem"><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+        <button
+          class="mobile-menu-toggle"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="nav-links"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <a href="resume.html" class="btn btn-primary header-resume-btn" aria-label="View Resume">Resume</a>
+      </div>
+    </header>
+
+    <main id="main-content" class="container page-main">
+      <section class="error-page">
+        <div class="error-code" aria-label="404 Error">404</div>
+        <h1 class="error-title">System Error: Page Not Found</h1>
+        <p class="error-description">
+          The coordinates you entered seem to lead to a black hole.
+          Let's get you back to safety.
+        </p>
+        <a href="index.html" class="btn btn-primary">
+          Return to Base &rarr;
+        </a>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-content">
+        <div class="footer-main">
+          <p>&copy; <time datetime="2026">2026</time> Vaibhav Tiwari. Built with passion.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js?v=2.0"></script>
+  </body>
+</html>
