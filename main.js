@@ -387,7 +387,7 @@ function initProjectModals() {
         { text: "GitHub", url: "https://github.com/vaibhav09012007-design/Mind-Sync" }
       ]
     },
-    Nexus: {
+    "Nexus Arena": {
       stack: "GAMING • COMMUNITY • WEB3",
       description: `
         <p><strong>Overview:</strong> A next-generation gaming hub connecting players and developers with real-time tournaments and asset trading.</p>
@@ -400,6 +400,9 @@ function initProjectModals() {
         </ul>
       `,
       status: "coming-soon",
+      links: [
+        { text: "GitHub", url: "https://github.com/vaibhav09012007-design/-NEXUS-ARENA" }
+      ]
     }
   };
 
