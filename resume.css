@@ -1,27 +1,23 @@
+/* ==========================================================================
+   RESUME STYLES — OBSIDIAN & AMBER THEME
+   Named Theme: Obsidian & Amber
+   Matches portfolio dark theme on screen, pristine paper print styles on print
+   ========================================================================== */
+
 :root {
-  --bg-light: #f5f4f0;
-  --bg-dark: #0c0d0e;
-  --fg-light: #121314;
-  --fg-dark: #f0f1f5;
-  --fg-muted-light: #5a5c63;
-  --fg-muted-dark: #9ea2b0;
-  --border-light: rgba(0, 0, 0, 0.08);
-  --border-dark: rgba(255, 255, 255, 0.08);
-  --green-bg: #e8f4d9;
-  --green-fg: #366610;
+  /* Screen Theme Tokens */
+  --bg-body: #090a0d;
+  --bg-page: #101216;
+  --text-primary: rgba(255, 255, 255, 0.94);
+  --text-secondary: rgba(255, 255, 255, 0.65);
+  --text-muted: rgba(255, 255, 255, 0.42);
+  --accent: #f59e0b;
+  --accent-hover: #fbbf24;
+  --border: rgba(255, 255, 255, 0.07);
+  --border-subtle: rgba(255, 255, 255, 0.035);
 
-  --serif: 'Playfair Display', Georgia, serif;
-  --sans: 'DM Sans', system-ui, sans-serif;
-  --mono: 'DM Mono', 'Courier New', monospace;
-
-  /* Theme mappings matching portfolio */
-  --text-primary: var(--fg-light);
-  --text-secondary: var(--fg-muted-light);
-  --text-muted: #8c8f9a;
-  --accent: var(--green-fg);
-  --border: var(--border-light);
-  --bg-page: #faf9f6; /* Warm paper color */
-  --bg-body: #efeee9; /* Tan background for contrast */
+  --sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --mono: "DM Mono", SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 }
 
 * {
@@ -33,8 +29,8 @@
 /* Keyboard focus visual outlines */
 a:focus-visible,
 button:focus-visible {
-  outline: 2px solid var(--text-primary);
-  outline-offset: 4px;
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
 }
 
 body {
@@ -44,35 +40,80 @@ body {
   background: var(--bg-body);
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Back and Print buttons */
+.no-print {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 500;
+  padding: 8px 18px;
+  border-radius: 9999px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.18s ease;
+}
+
+.btn-back {
+  position: fixed;
+  top: 24px;
+  left: 24px;
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+  z-index: 100;
+}
+
+.btn-back:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text-primary);
+  border-color: rgba(255, 255, 255, 0.16);
+}
+
+.btn-print {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  background: var(--accent);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  z-index: 100;
+}
+
+.btn-print:hover {
+  background: var(--accent-hover);
 }
 
 .page {
   background: var(--bg-page);
   width: 21cm;
   min-height: 29.7cm;
-  margin: 50px auto;
+  margin: 48px auto;
   padding: 56px 64px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04), 0 1px 3px rgba(0, 0, 0, 0.02);
-  border: 1px solid rgba(0, 0, 0, 0.05);
-  border-radius: 4px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
   position: relative;
 }
 
 /* Header */
 header {
   text-align: center;
-  margin-bottom: 28px;
-  padding-bottom: 24px;
-  border-bottom: 1.5px solid var(--text-primary);
+  margin-bottom: 26px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid var(--border);
 }
 
 header h1 {
-  font-family: var(--serif);
-  font-size: 32px;
+  font-family: var(--sans);
+  font-size: 28px;
   font-weight: 700;
   color: var(--text-primary);
-  letter-spacing: -0.5px;
-  margin-bottom: 6px;
+  letter-spacing: -0.02em;
+  margin-bottom: 4px;
 }
 
 .role {
@@ -82,7 +123,7 @@ header h1 {
   color: var(--accent);
   text-transform: uppercase;
   letter-spacing: 2px;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .contact-row {
@@ -98,13 +139,11 @@ header h1 {
 .contact-row a {
   color: var(--text-secondary);
   text-decoration: none;
-  border-bottom: 1px solid transparent;
-  transition: all 0.2s ease;
+  transition: color 0.18s ease;
 }
 
 .contact-row a:hover {
-  color: var(--accent);
-  border-color: var(--accent);
+  color: var(--text-primary);
 }
 
 .contact-row span {
@@ -113,7 +152,7 @@ header h1 {
 
 /* Sections */
 section {
-  margin-bottom: 24px;
+  margin-bottom: 22px;
 }
 
 section:last-of-type {
@@ -121,20 +160,21 @@ section:last-of-type {
 }
 
 h2 {
-  font-family: var(--serif);
-  font-size: 16px;
+  font-family: var(--sans);
+  font-size: 14px;
   font-weight: 600;
   color: var(--text-primary);
-  margin-bottom: 12px;
-  padding-bottom: 6px;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
   border-bottom: 1px solid var(--border);
-  letter-spacing: 0.2px;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
 }
 
 /* Summary */
 .summary {
   font-size: 13px;
-  line-height: 1.7;
+  line-height: 1.65;
   color: var(--text-secondary);
 }
 
@@ -142,12 +182,12 @@ h2 {
 .skills-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 16px;
 }
 
 .skill-group h3 {
   font-family: var(--sans);
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 600;
   color: var(--text-primary);
   margin-bottom: 8px;
@@ -162,23 +202,16 @@ h2 {
 .skill-tag {
   font-family: var(--mono);
   font-size: 11px;
-  padding: 3px 10px;
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0.03);
   border: 1px solid var(--border);
-  border-radius: 99px;
   color: var(--text-secondary);
-  transition: all 0.2s ease;
+  padding: 3px 8px;
+  border-radius: 4px;
 }
 
-.skill-tag:hover {
-  border-color: var(--text-primary);
-  color: var(--text-primary);
-  background: var(--bg-light);
-}
-
-/* Experience/Projects */
+/* Items */
 .item {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .item:last-child {
@@ -193,9 +226,8 @@ h2 {
 }
 
 .item-title {
-  font-family: var(--sans);
-  font-size: 14px;
   font-weight: 600;
+  font-size: 14px;
   color: var(--text-primary);
 }
 
@@ -203,199 +235,64 @@ h2 {
   font-family: var(--mono);
   font-size: 11px;
   color: var(--text-muted);
-  font-weight: 500;
 }
 
 .item-subtitle {
-  font-family: var(--mono);
-  font-size: 11.5px;
-  color: var(--accent);
-  font-weight: 500;
-  margin-bottom: 8px;
-  letter-spacing: 0.2px;
-}
-
-.item-description {
-  font-size: 13px;
-  color: var(--text-secondary);
-  line-height: 1.6;
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: 6px;
 }
 
 .item-description ul {
-  padding-left: 16px;
-  margin: 0;
+  padding-left: 18px;
+  margin-bottom: 6px;
 }
 
 .item-description li {
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--text-secondary);
   margin-bottom: 4px;
 }
 
-.item-description li:last-child {
-  margin-bottom: 0;
-}
-
 .resume-links-footer {
-  margin-top: 8px;
-  font-family: var(--sans);
   font-size: 12px;
   color: var(--text-muted);
+  margin-top: 6px;
 }
 
 .resume-links-footer a {
-  border-bottom: 1px solid transparent;
-  transition: all 0.2s ease;
+  color: var(--accent);
   text-decoration: none;
 }
 
 .resume-links-footer a:hover {
-  border-color: var(--accent);
+  text-decoration: underline;
 }
 
-/* Navigation Buttons (Tactile Pill Style) */
-.btn-back,
-.btn-print {
-  position: fixed;
-  top: 24px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  font-family: var(--sans);
-  font-size: 13px;
-  font-weight: 600;
-  color: #333;
-  padding: 10px 22px;
-  border-radius: 99px;
-  background: linear-gradient(135deg, #f5f4f0 0%, #dbdad3 100%);
-  border: 1px solid rgba(255, 255, 255, 0.7);
-  box-shadow: 
-    inset 1px 1px 2px rgba(255, 255, 255, 0.9), 
-    inset -1px -1px 2px rgba(0, 0, 0, 0.15), 
-    0 4px 12px rgba(0, 0, 0, 0.08);
-  transition: transform 0.2s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.2s ease;
-  white-space: nowrap;
-  cursor: pointer;
-  text-decoration: none;
-  z-index: 10;
-}
-
-.btn-back {
-  left: 24px;
-}
-
-.btn-print {
-  right: 24px;
-  background: linear-gradient(135deg, #e8f4d9 0%, #c9dbb5 100%);
-  border-color: rgba(255, 255, 255, 0.8);
-  color: var(--green-fg);
-  box-shadow: 
-    inset 1px 1px 2px rgba(255, 255, 255, 0.9), 
-    inset -1px -1px 2px rgba(0, 0, 0, 0.1), 
-    0 4px 12px rgba(54, 102, 16, 0.12);
-}
-
-.btn-back:hover,
-.btn-print:hover {
-  transform: translateY(-2px);
-}
-
-.btn-back:hover {
-  box-shadow: 
-    inset 1px 1px 2px rgba(255, 255, 255, 0.9), 
-    inset -1px -1px 2px rgba(0, 0, 0, 0.1), 
-    0 8px 20px rgba(0, 0, 0, 0.12);
-}
-
-.btn-print:hover {
-  box-shadow: 
-    inset 1px 1px 2px rgba(255, 255, 255, 0.9), 
-    inset -1px -1px 2px rgba(0, 0, 0, 0.05), 
-    0 8px 20px rgba(54, 102, 16, 0.2);
-}
-
-.btn-back:active,
-.btn-print:active {
-  transform: translateY(1px);
-}
-
-.btn-back:active {
-  box-shadow: 
-    inset 1px 2px 4px rgba(0, 0, 0, 0.2), 
-    inset -1px -1px 2px rgba(255, 255, 255, 0.6), 
-    0 2px 4px rgba(0, 0, 0, 0.05);
-}
-
-.btn-print:active {
-  box-shadow: 
-    inset 1px 2px 4px rgba(54, 102, 16, 0.2), 
-    inset -1px -1px 2px rgba(255, 255, 255, 0.6), 
-    0 2px 4px rgba(54, 102, 16, 0.05);
-}
-
-/* ──────────────────────────────────────────
-   RESPONSIVE SCREEN STYLES
-   ────────────────────────────────────────── */
-@media screen and (max-width: 840px) {
-  body {
-    background: var(--bg-light);
-  }
-
+@media (max-width: 850px) {
   .page {
-    width: 95%;
-    margin: 80px auto 30px auto; /* Margin top to clear fixed buttons */
+    width: 92%;
+    margin: 80px auto 40px;
     padding: 32px 24px;
-    min-height: auto;
-    box-shadow: none;
-    border: 1px solid var(--border);
   }
 
   .skills-container {
-    grid-template-columns: 1fr; /* Stack skill columns */
-    gap: 20px;
-  }
-
-  .btn-back, 
-  .btn-print {
-    position: absolute;
-    top: 20px;
-    padding: 8px 16px;
-  }
-  
-  .btn-back {
-    left: 2.5%;
-  }
-  
-  .btn-print {
-    right: 2.5%;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  header h1 {
-    font-size: 24px;
-  }
-
-  .contact-row {
-    flex-direction: column;
-    align-items: center;
-    gap: 4px;
-  }
-
-  .contact-row span {
-    display: none; /* Hide bullets on stacked layouts */
+    grid-template-columns: 1fr;
+    gap: 12px;
   }
 }
 
 /* ──────────────────────────────────────────
-   PRINT STYLES
+   PRINT STYLES (Clean Paper PDF Export)
    ────────────────────────────────────────── */
 @media print {
   body {
     background: #ffffff !important;
-    color: #000000 !important;
-    font-size: 12px; /* Marginally smaller font for print fit */
+    color: #111111 !important;
+    font-size: 11.5px;
   }
-  
+
   .page {
     box-shadow: none !important;
     border: none !important;
@@ -404,41 +301,65 @@ h2 {
     width: 100% !important;
     min-height: auto !important;
     background: #ffffff !important;
+    color: #111111 !important;
   }
-  
+
   .no-print {
     display: none !important;
   }
-  
+
   a {
-    color: #000000 !important;
+    color: #111111 !important;
     text-decoration: none !important;
   }
-  
+
   header {
-    border-bottom: 2px solid #000000 !important;
-    margin-bottom: 20px !important;
-    padding-bottom: 16px !important;
+    border-bottom: 1.5px solid #111111 !important;
+    margin-bottom: 18px !important;
+    padding-bottom: 14px !important;
   }
-  
+
+  header h1 {
+    color: #111111 !important;
+  }
+
+  .role {
+    color: #333333 !important;
+  }
+
+  .contact-row,
+  .summary,
+  .item-description li {
+    color: #333333 !important;
+  }
+
   h2 {
-    border-bottom: 1px solid #000000 !important;
+    border-bottom: 1px solid #333333 !important;
     margin-bottom: 8px !important;
     padding-bottom: 4px !important;
-    font-size: 13px !important;
+    font-size: 12px !important;
+    color: #111111 !important;
   }
-  
+
   .skill-tag {
     background: #ffffff !important;
-    border: 1px solid #000000 !important;
-    color: #000000 !important;
+    border: 1px solid #cccccc !important;
+    color: #222222 !important;
   }
-  
+
   .item {
     margin-bottom: 12px !important;
   }
-  
+
+  .item-title {
+    color: #111111 !important;
+  }
+
   .item-subtitle {
-    color: #000000 !important;
+    color: #555555 !important;
+  }
+
+  .resume-links-footer a {
+    color: #111111 !important;
   }
 }

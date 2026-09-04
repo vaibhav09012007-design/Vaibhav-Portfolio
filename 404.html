@@ -1,169 +1,166 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>404 — Page Not Found | Vaibhav Tiwari</title>
-  <meta name="description" content="This page doesn't exist. Head back to Vaibhav Tiwari's portfolio." />
-  <meta name="robots" content="noindex, nofollow" />
-  <meta name="theme-color" content="#f5f4f0" />
-  <link rel="icon" type="image/png" href="favicon.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet" />
-  <style>
-    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 — Page Not Found | Vaibhav Tiwari</title>
+    <meta
+      name="description"
+      content="The page you are looking for does not exist. Return to Vaibhav Tiwari's portfolio."
+    />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=DM+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
 
-    :root {
-      --bg: #f5f4f0;
-      --fg: #121314;
-      --fg-muted: #5a5c63;
-      --fg-tertiary: #9a9a95;
-      --border-color: rgba(0,0,0,0.08);
-      --serif: 'Playfair Display', Georgia, serif;
-      --sans: 'DM Sans', system-ui, sans-serif;
-      --mono: 'DM Mono', 'Courier New', monospace;
-    }
+    <!-- Prevent FOUC -->
+    <script>
+      (function () {
+        try {
+          const saved = localStorage.getItem("theme");
+          const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+          const theme = saved || (systemDark ? "dark" : "light");
+          if (theme === "dark") {
+            document.documentElement.classList.add("dark");
+          } else {
+            document.documentElement.classList.remove("dark");
+          }
+          const meta = document.querySelector('meta[name="theme-color"]');
+          if (meta) meta.setAttribute("content", theme === "dark" ? "#09090b" : "#ffffff");
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body id="top">
+    <!-- Accessible Skip Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
-    body {
-      font-family: var(--sans);
-      background: var(--bg);
-      color: var(--fg);
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-    }
-
-    a { color: inherit; text-decoration: none; }
-
-    a:focus-visible,
-    button:focus-visible {
-      outline: 2px solid var(--fg);
-      outline-offset: 4px;
-    }
-
-    /* Nav */
-    .nav {
-      padding: 18px clamp(20px, 4vw, 48px);
-      border-bottom: 1px solid var(--border-color);
-      background: rgba(245, 244, 240, 0.82);
-      backdrop-filter: blur(18px);
-      -webkit-backdrop-filter: blur(18px);
-    }
-    .nav-logo {
-      font-family: var(--serif);
-      font-size: 24px;
-      font-weight: 700;
-      letter-spacing: -0.04em;
-    }
-
-    /* Error content */
-    .error {
-      flex: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: clamp(40px, 8vw, 80px) clamp(20px, 4vw, 48px);
-    }
-
-    .error-inner {
-      text-align: center;
-      max-width: 480px;
-    }
-
-    .error-code {
-      font-family: var(--serif);
-      font-size: clamp(72px, 12vw, 120px);
-      font-weight: 600;
-      letter-spacing: -0.04em;
-      line-height: 1;
-      color: var(--fg-tertiary);
-      margin-bottom: 16px;
-    }
-
-    .error-title {
-      font-family: var(--serif);
-      font-size: clamp(24px, 3.5vw, 32px);
-      font-weight: 600;
-      letter-spacing: -0.02em;
-      margin-bottom: 12px;
-    }
-
-    .error-desc {
-      font-size: 15px;
-      line-height: 1.7;
-      color: var(--fg-muted);
-      margin-bottom: 32px;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      font-family: var(--sans);
-      font-size: 14px;
-      font-weight: 600;
-      color: #333;
-      padding: 12px 28px;
-      border-radius: 99px;
-      background: linear-gradient(135deg, #f0f0f0 0%, #d8d8d8 100%);
-      border: 1px solid rgba(255, 255, 255, 0.7);
-      box-shadow:
-        inset 1px 1px 2px rgba(255, 255, 255, 0.9),
-        inset -1px -1px 2px rgba(0, 0, 0, 0.15),
-        0 4px 12px rgba(0, 0, 0, 0.08);
-      transition: transform 0.2s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.2s ease;
-      cursor: pointer;
-    }
-    .btn:hover {
-      transform: translateY(-2px);
-      box-shadow:
-        inset 1px 1px 2px rgba(255, 255, 255, 0.9),
-        inset -1px -1px 2px rgba(0, 0, 0, 0.1),
-        0 8px 20px rgba(0, 0, 0, 0.12);
-    }
-    .btn:active {
-      transform: translateY(1px);
-      box-shadow:
-        inset 1px 2px 4px rgba(0, 0, 0, 0.2),
-        inset -1px -1px 2px rgba(255, 255, 255, 0.6),
-        0 2px 4px rgba(0, 0, 0, 0.05);
-    }
-
-    /* Footer */
-    .footer {
-      padding: 20px clamp(20px, 4vw, 48px);
-      border-top: 1px solid var(--border-color);
-    }
-    .footer-text {
-      font-size: 12px;
-      color: var(--fg-tertiary);
-      font-family: var(--mono);
-      letter-spacing: 0.02em;
-    }
-  </style>
-</head>
-<body>
-  <header class="nav">
-    <a href="/" class="nav-logo" aria-label="Home">VT</a>
-  </header>
-
-  <main class="error" id="main">
-    <div class="error-inner">
-      <div class="error-code" aria-hidden="true">404</div>
-      <h1 class="error-title">Page not found</h1>
-      <p class="error-desc">
-        The page you're looking for doesn't exist or has been moved.
-      </p>
-      <a href="/" class="btn" id="btn-404-home">Back to portfolio →</a>
+    <!-- Pull-Cord Theme Toggle -->
+    <div
+      class="pullcord"
+      id="pullcord"
+      role="button"
+      tabindex="0"
+      aria-label="Toggle theme"
+      aria-pressed="false"
+    >
+      <svg
+        class="pullcord-svg"
+        width="32"
+        height="320"
+        viewBox="0 0 32 320"
+        aria-hidden="true"
+      >
+        <line
+          id="pullcord-line"
+          class="pullcord-string"
+          x1="16"
+          y1="0"
+          x2="16"
+          y2="172"
+        />
+        <g id="pullcord-knob" class="pullcord-knob-group" transform="translate(16, 172)">
+          <circle cx="0" cy="0" r="8" class="pullcord-knob-outer" />
+          <circle cx="0" cy="0" r="3.5" class="pullcord-knob-inner" />
+          <rect x="-3" y="6" width="6" height="14" rx="2.5" class="pullcord-knob-outer" />
+        </g>
+      </svg>
     </div>
-  </main>
 
-  <footer class="footer">
-    <p class="footer-text">© 2026 Vaibhav Tiwari</p>
-  </footer>
-</body>
+    <!-- Hand-drawn style pull hint -->
+    <div class="cord-hint" id="cord-hint" aria-hidden="true">
+      <span class="cord-hint-text">pull the<br />cord!</span>
+      <svg class="cord-hint-arrow" viewBox="16 11 59 68" width="44" height="50" aria-hidden="true">
+        <path d="M63.9304352,16.6935883c-0.7543335-0.2961426-1.5021973-0.5897217-2.2429199-0.8804922c-0.4156494-0.151001-0.8272705-0.3005371-1.2348022-0.4485474c-0.8189087-0.2849731-1.6208496-0.5641479-2.4039307-0.8366699c-3.142334-1.060791-6.0206909-1.8996582-8.4889526-2.4821777c-4.9364014-1.164978-8.2321777-1.3042603-8.7171021-0.1418457c-0.4849243,1.1624756,1.9327393,3.4066162,6.2335815,6.0951529c1.8245239,1.140564,4.0041504,2.3630371,6.4287109,3.6149292c-3.9299927,0.5129395-8.5645752,1.7341919-13.3596802,4.0892334c-2.4478149,1.2183838-4.8989258,2.7646484-7.2866211,4.5922241c-2.3288574,1.8961792-4.618042,4.0429077-6.6160278,6.5328979c-4.0496826,4.9500122-6.6275635,10.5092773-8.1968384,15.6245728c-1.5393066,5.1433716-2.2120972,9.887085-2.272583,13.8354492c-0.1154785,1.9729614,0.012085,3.7541504,0.1219482,5.3097534c0.0647583,0.777832,0.1106567,1.4995117,0.2159424,2.1618042c0.1115112,0.6623535,0.2285767,1.265686,0.350769,1.8070068c0.4889526,2.1658325,1.0587769,3.3349609,1.6884766,3.3342896c0.6296387-0.0006104,1.2607422-1.1640625,1.8604736-3.2163696c0.1498413-0.5132446,0.2977295-1.0822754,0.4429321-1.703186c0.1628418-0.6179199,0.3389282-1.2863159,0.5276489-2.0026855c0.3671875-1.4299927,0.6803589-3.0605469,1.182373-4.8129272c0.8353271-3.5391235,2.0805664-7.6299438,3.805542-11.9075317c1.7584839-4.2592163,4.09375-8.6965942,7.3496704-12.6729736c1.6064453-2.0076294,3.4013062-3.7537842,5.2017822-5.3754272c1.8607788-1.5527344,3.755249-2.9500122,5.6772461-4.1428223c3.8567505-2.3618164,7.7036743-4.0240479,11.0596924-5.2119751c0.1141968-0.0405884,0.2226563-0.0770874,0.3356323-0.1167603c-2.00354,2.4140625-3.7368164,4.677124-5.1082764,6.6715088c-2.8739014,4.1792603-4.1975708,7.2007446-3.2896729,8.0737915c0.9078369,0.8730469,3.8753052-0.5675049,7.9391479-3.602478c2.0318604-1.5174561,4.3378906-3.4335327,6.7976074-5.6582031c0.6096802-0.5618896,1.2340698-1.1373901,1.8716431-1.7250366c0.3148193-0.2980347,0.6328735-0.5991821,0.9540405-0.9032593c0.5633545-0.5615845,1.1321411-1.128479,1.7058105-1.7003784c2.5238647-2.5367432,5.1615601-5.2334595,7.8085938-7.9859619C70.7511749,19.4375458,67.2552032,18.0151825,63.9304352,16.6935883z" fill="currentColor"/>
+      </svg>
+    </div>
+
+    <!-- Site Header -->
+    <header class="site-header" role="banner">
+      <div class="screen-line-before screen-line-after header-container">
+        <a href="index.html" class="header-brand" aria-label="Vaibhav Tiwari — Home">
+          <div class="header-brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 6 L12 20 L20 6" />
+              <line x1="8" y1="13" x2="16" y2="13" />
+            </svg>
+          </div>
+          <span>Vaibhav Tiwari</span>
+        </a>
+
+        <nav class="desktop-nav" aria-label="Main Navigation">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="index.html#work" class="nav-link">Work</a>
+          <a href="index.html#stack" class="nav-link">Stack</a>
+          <a href="index.html#services" class="nav-link">Services</a>
+          <a href="index.html#contact" class="nav-link">Contact</a>
+          <a href="resume.html" class="nav-link">Resume ↗</a>
+        </nav>
+
+        <div class="header-actions">
+          <a
+            href="https://github.com/Vaibhavtiwari-dev"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="icon-btn"
+            aria-label="GitHub Profile"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+            </svg>
+          </a>
+          <button
+            class="icon-btn mobile-theme-btn"
+            id="mobile-theme-toggle"
+            aria-label="Toggle theme"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content" class="page-wrapper" style="min-height: 70vh; display: flex; align-items: center; justify-content: center;">
+      <div class="portfolio-column" style="width: 100%;">
+        <div class="screen-line-before screen-line-after panel" style="text-align: center; padding: 4rem 1.5rem;">
+          <span style="font-family: var(--font-mono); font-size: 0.8125rem; color: var(--muted-foreground); text-transform: uppercase; letter-spacing: 0.08em;">404 Error</span>
+          <h1 style="font-size: 2.25rem; font-weight: 600; margin: 0.5rem 0 1rem; color: var(--foreground);">Page Not Found</h1>
+          <p style="color: var(--muted-foreground); max-width: 440px; margin: 0 auto 2rem; font-size: 0.9375rem; line-height: 1.5;">
+            The page you're looking for doesn't exist or has moved. Return to the home portfolio.
+          </p>
+          <div style="display: flex; justify-content: center; gap: 0.75rem; flex-wrap: wrap;">
+            <a href="index.html" class="btn-action btn-whatsapp-action">Return to Home</a>
+            <a href="index.html#contact" class="btn-action btn-secondary-action">Contact</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Site Footer -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="screen-line-before footer-inner">
+        <div class="footer-text">
+          © 2026 Vaibhav Tiwari. Engineered with precision &amp; zero fluff.
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <span style="opacity: 0.35;">•</span>
+          <a href="https://github.com/Vaibhavtiwari-dev" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <span style="opacity: 0.35;">•</span>
+          <a href="resume.html">Resume</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+  </body>
 </html>

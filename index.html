@@ -1,2673 +1,639 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Vaibhav Tiwari — Full-stack developer who takes products from zero to deployed. React, Next.js, Node.js, TypeScript, PostgreSQL, and AI integration. Portfolio showcasing Mind-Sync and production-grade projects. Based in India." />
-  <meta name="keywords" content="Vaibhav Tiwari, full stack developer, React developer, Next.js developer, TypeScript, Node.js, portfolio, AI developer, Mind-Sync, web developer India, freelance developer" />
-  <meta name="author" content="Vaibhav Tiwari" />
-  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-  <meta name="theme-color" content="#f5f4f0" />
-  <link rel="canonical" href="https://vaibhav-portfolio-930c6.web.app/" />
-  <title>Vaibhav Tiwari — Full Stack Developer | React, Next.js, TypeScript, AI</title>
-
-  <meta property="og:title" content="Vaibhav Tiwari — Full Stack Developer" />
-  <meta property="og:description" content="Full-stack developer who ships production-grade products solo. React, Next.js, TypeScript, Node.js, PostgreSQL, and AI. View my work and get in touch." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://vaibhav-portfolio-930c6.web.app/" />
-  <meta property="og:image" content="https://vaibhav-portfolio-930c6.web.app/og-image.png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="Vaibhav Tiwari — Full Stack Developer Portfolio" />
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:site_name" content="Vaibhav Tiwari Portfolio" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Vaibhav Tiwari — Full Stack Developer" />
-  <meta name="twitter:description" content="Full-stack developer who ships production-grade products solo. React, Next.js, TypeScript, and AI." />
-  <meta name="twitter:creator" content="@AsterismVaibhav" />
-  <meta name="twitter:image" content="https://vaibhav-portfolio-930c6.web.app/og-image.png" />
-  <meta name="twitter:image:alt" content="Vaibhav Tiwari — Full Stack Developer Portfolio" />
-
-  <link rel="icon" type="image/png" href="favicon.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,400;0,500;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet" />
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Vaibhav Tiwari",
-    "givenName": "Vaibhav",
-    "familyName": "Tiwari",
-    "jobTitle": "Full Stack Developer",
-    "description": "Full-stack developer who ships production-grade products solo. Specializes in React, Next.js, TypeScript, Node.js, PostgreSQL, and AI integration.",
-    "url": "https://vaibhav-portfolio-930c6.web.app",
-    "image": "https://vaibhav-portfolio-930c6.web.app/og-image.png",
-    "email": "mailto:vaibhav09012007@gmail.com",
-    "sameAs": [
-      "https://github.com/Vaibhavtiwari-dev",
-      "https://x.com/AsterismVaibhav"
-    ],
-    "knowsAbout": ["React", "Next.js", "Node.js", "TypeScript", "PostgreSQL", "Python", "Full Stack Development", "AI", "Gemini AI"],
-    "alumniOf": {
-      "@type": "CollegeOrUniversity",
-      "name": "JSS Academy of Technical Education, Noida"
-    },
-    "nationality": {
-      "@type": "Country",
-      "name": "India"
-    }
-  }
-  </script>
-
-  <style>
-    :root {
-      --bg-light:       #f5f4f0;
-      --bg-dark:        #0c0d0e;
-      --fg-light:       #121314;
-      --fg-dark:        #f0f1f5;
-      --fg-muted-light: #5a5c63;
-      --fg-muted-dark:  #9ea2b0;
-      --border-light:   rgba(0, 0, 0, 0.08);
-      --border-dark:    rgba(255, 255, 255, 0.08);
-      --green-bg:       #e8f4d9;
-      --green-fg:       #366610;
-
-      --serif:          'Playfair Display', Georgia, serif;
-      --sans:           'DM Sans', system-ui, sans-serif;
-      --mono:           'DM Mono', 'Courier New', monospace;
-
-      --max-w:          1180px;
-      --gutter:         clamp(20px, 4vw, 40px);
-      --section-py:     clamp(64px, 10vw, 112px);
-
-      --border:         1px solid var(--border-light);
-      --border-color:   var(--border-light);
-      --fg:             var(--fg-light);
-      --fg-secondary:   var(--fg-muted-light);
-      --fg-tertiary:    var(--fg-muted-light);
-      --bg:             var(--bg-light);
-    }
-
-    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-
-    html {
-      scroll-behavior: smooth;
-      -webkit-text-size-adjust: 100%;
-      text-size-adjust: 100%;
-    }
-
-    body {
-      font-family: var(--sans);
-      font-size: 15px;
-      line-height: 1.65;
-      color: var(--fg-light);
-      background: var(--bg-light);
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      overflow-x: hidden;
-      position: relative;
-    }
-
-    a { color: inherit; text-decoration: none; }
-    img { display: block; max-width: 100%; }
-    button { font: inherit; cursor: pointer; border: none; background: none; }
-    ul, ol { list-style: none; }
-
-    .skip {
-      position: absolute;
-      top: -100%;
-      left: 16px;
-      background: var(--fg-light);
-      color: var(--bg-light);
-      padding: 8px 16px;
-      font-size: 13px;
-      z-index: 999;
-      border-radius: 4px;
-    }
-    .skip:focus { top: 8px; }
-
-    a:focus-visible,
-    button:focus-visible {
-      outline: 2px solid var(--fg-light);
-      outline-offset: 4px;
-    }
-
-    .container { max-width: var(--max-w); margin: 0 auto; padding-left: var(--gutter); padding-right: var(--gutter); }
-
-    .label {
-      font-family: var(--mono);
-      font-size: 11px;
-      font-weight: 500;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: var(--fg-muted-light);
-    }
-
-    .section-heading {
-      font-family: var(--serif);
-      font-size: clamp(28px, 4vw, 38px);
-      font-weight: 600;
-      letter-spacing: -0.015em;
-      color: var(--fg-light);
-    }
-
-    /* ──────────────────────────────────────────
-       TACTILE METALLIC BUTTONS & LINKS
-       ────────────────────────────────────────── */
-    .btn-tactile {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      font-family: var(--sans);
-      font-size: 14px;
-      font-weight: 600;
-      color: #333;
-      padding: 12px 28px;
-      border-radius: 99px;
-      background: linear-gradient(135deg, #f0f0f0 0%, #d8d8d8 100%);
-      border: 1px solid rgba(255, 255, 255, 0.7);
-      box-shadow: 
-        inset 1px 1px 2px rgba(255, 255, 255, 0.9), 
-        inset -1px -1px 2px rgba(0, 0, 0, 0.15), 
-        0 4px 12px rgba(0, 0, 0, 0.08);
-      transition: transform 0.2s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.2s ease;
-      white-space: nowrap;
-    }
-    .btn-tactile:hover {
-      transform: translateY(-2px);
-      box-shadow: 
-        inset 1px 1px 2px rgba(255, 255, 255, 0.9), 
-        inset -1px -1px 2px rgba(0, 0, 0, 0.1), 
-        0 8px 20px rgba(0, 0, 0, 0.12);
-    }
-    .btn-tactile:active {
-      transform: translateY(1px);
-      box-shadow: 
-        inset 1px 2px 4px rgba(0, 0, 0, 0.2), 
-        inset -1px -1px 2px rgba(255, 255, 255, 0.6), 
-        0 2px 4px rgba(0, 0, 0, 0.05);
-    }
-
-    .btn-dark-pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      font-family: var(--sans);
-      font-size: 13px;
-      font-weight: 500;
-      padding: 8px 20px;
-      border-radius: 99px;
-      background: #111213;
-      color: #fff;
-      border: 1px solid rgba(255,255,255,0.08);
-      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-      transition: background 0.25s, transform 0.2s;
-    }
-    .btn-dark-pill:hover {
-      background: #25272a;
-      transform: translateY(-1px);
-    }
-
-    .link-cv {
-      font-size: 14px;
-      font-weight: 500;
-      color: var(--fg-muted-light);
-      position: relative;
-      padding-bottom: 2px;
-      transition: color 0.2s;
-    }
-    .link-cv::after {
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 1px;
-      bottom: 0;
-      left: 0;
-      background-color: var(--fg-muted-light);
-      transform: scaleX(0.7);
-      transform-origin: bottom left;
-      transition: transform 0.25s ease-out, background-color 0.2s;
-    }
-    .link-cv:hover {
-      color: var(--fg-light);
-    }
-    .link-cv:hover::after {
-      transform: scaleX(1);
-      background-color: var(--fg-light);
-    }
-
-    .link-arrow {
-      font-size: 14px;
-      font-weight: 500;
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
-      transition: gap 0.25s;
-    }
-    .link-arrow:hover { gap: 10px; }
-    .link-arrow::after { content: '→'; }
-
-    /* ──────────────────────────────────────────
-       NAVIGATION BAR REDESIGN
-       ────────────────────────────────────────── */
-    .nav {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      background: rgba(245, 244, 240, 0.82);
-      backdrop-filter: blur(18px);
-      -webkit-backdrop-filter: blur(18px);
-      border-bottom: 1px solid var(--border-light);
-      transition: background 0.3s;
-    }
-
-    .nav-inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      height: 68px;
-    }
-
-    .nav-logo {
-      font-family: var(--serif);
-      font-size: 24px;
-      font-weight: 700;
-      letter-spacing: -0.04em;
-      color: var(--fg-light);
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 40px;
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-    .nav-link {
-      font-size: 12px;
-      font-weight: 600;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--fg-muted-light);
-      transition: color 0.25s;
-    }
-    .nav-link:hover { color: var(--fg-light); }
-
-    .nav-hamburger {
-      display: none;
-      flex-direction: column;
-      justify-content: center;
-      gap: 5px;
-      width: 24px;
-      height: 24px;
-      z-index: 110;
-    }
-    .nav-hamburger span {
-      display: block;
-      height: 2px;
-      background: var(--fg-light);
-      transition: transform 0.3s, opacity 0.3s, background-color 0.3s;
-      transform-origin: center;
-    }
-    .nav-hamburger.is-active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-    .nav-hamburger.is-active span:nth-child(2) { opacity: 0; }
-    .nav-hamburger.is-active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
-
-    /* Mobile drawer navigation */
-    .mobile-drawer {
-      position: fixed;
-      top: 0;
-      right: -100%;
-      width: 100%;
-      height: 100vh;
-      background: rgba(245, 244, 240, 0.98);
-      backdrop-filter: blur(20px);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 32px;
-      z-index: 90;
-      transition: right 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-    .mobile-drawer.is-open { right: 0; }
-
-    .mobile-nav-link {
-      font-size: 20px;
-      font-weight: 500;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--fg-light);
-    }
-
-    /* ──────────────────────────────────────────
-       HERO & LIGHTING PLAY
-       ────────────────────────────────────────── */
-    .hero {
-      padding: calc(var(--section-py) * 0.9) 0;
-      background: radial-gradient(circle at 75% 35%, rgba(230, 227, 218, 0.6) 0%, transparent 60%);
-      border-bottom: 1px solid var(--border-light);
-      overflow: hidden;
-    }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      gap: clamp(32px, 6vw, 80px);
-      align-items: center;
-    }
-
-    .badge-available {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      font-family: var(--mono);
-      font-size: 11px;
-      font-weight: 500;
-      letter-spacing: 0.05em;
-      color: var(--green-fg);
-      background: var(--green-bg);
-      border: 1px solid rgba(54, 102, 16, 0.15);
-      padding: 6px 14px;
-      border-radius: 99px;
-      margin-bottom: 28px;
-    }
-
-    .badge-dot {
-      width: 6px;
-      height: 6px;
-      background: var(--green-fg);
-      border-radius: 50%;
-      box-shadow: 0 0 8px var(--green-fg);
-      animation: pulse-glow 2s ease-in-out infinite;
-    }
-
-    @keyframes pulse-glow {
-      0%, 100% { transform: scale(1); opacity: 1; box-shadow: 0 0 6px rgba(54, 102, 16, 0.6); }
-      50% { transform: scale(1.15); opacity: 0.4; box-shadow: 0 0 12px rgba(54, 102, 16, 0.2); }
-    }
-
-    .hero-headline {
-      font-family: var(--serif);
-      font-size: clamp(40px, 6vw, 68px);
-      font-weight: 600;
-      line-height: 1.08;
-      letter-spacing: -0.025em;
-      margin-bottom: 24px;
-      color: var(--fg-light);
-    }
-
-    .hero-headline em {
-      font-style: italic;
-      font-weight: 400;
-      color: var(--fg-muted-light);
-      text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.05);
-    }
-
-    .hero-sub {
-      font-size: 16px;
-      line-height: 1.75;
-      color: var(--fg-muted-light);
-      max-width: 440px;
-      margin-bottom: 36px;
-    }
-
-    .hero-actions {
-      display: flex;
-      align-items: center;
-      gap: 24px;
-    }
-
-    /* 3D Elevated metallic card container */
-    .hero-stats-wrapper {
-      perspective: 1200px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-    }
-
-    .hero-stats-3d {
-      width: 100%;
-      max-width: 380px;
-      background: linear-gradient(135deg, rgba(255,255,255,0.7) 0%, rgba(230,230,230,0.6) 100%);
-      border: 1.5px solid rgba(255,255,255,0.8);
-      border-radius: 20px;
-      padding: 32px;
-      position: relative;
-      transform-style: preserve-3d;
-      transform: rotateY(-18deg) rotateX(10deg) rotateZ(2deg);
-      box-shadow: 
-        20px 30px 50px rgba(0, 0, 0, 0.07),
-        0 10px 20px rgba(0, 0, 0, 0.04),
-        inset 1px 1px 0px rgba(255,255,255,0.8);
-      transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
-    }
-
-    /* Mechanical screw/hardware nodes at top corners */
-    .hero-stats-3d::before,
-    .hero-stats-3d::after {
-      content: '';
-      position: absolute;
-      top: 14px;
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: radial-gradient(circle at 35% 35%, #e0e0e0 0%, #888888 100%);
-      box-shadow: 1px 1px 2px rgba(0,0,0,0.4), inset -0.5px -0.5px 0.5px rgba(255,255,255,0.8);
-    }
-    .hero-stats-3d::before { left: 14px; }
-    .hero-stats-3d::after { right: 14px; }
-
-    .hero-stats-3d .label {
-      margin-bottom: 24px;
-      font-size: 10px;
-      color: var(--fg-muted-light);
-      display: block;
-      border-bottom: 0.5px solid rgba(0,0,0,0.06);
-      padding-bottom: 8px;
-    }
-
-    .stats-list {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-
-    .stat-row {
-      border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
-      padding-bottom: 12px;
-    }
-    .stat-row:last-child {
-      border-bottom: none;
-      padding-bottom: 0;
-    }
-
-    .stat-row-val {
-      font-family: var(--serif);
-      font-size: 26px;
-      font-weight: 600;
-      color: var(--fg-light);
-      line-height: 1.15;
-    }
-    .stat-row-val.mono {
-      font-family: var(--mono);
-      font-size: 14px;
-      font-weight: 500;
-      color: #2b2b2b;
-    }
-
-    .stat-row-lbl {
-      font-size: 12px;
-      color: var(--fg-muted-light);
-      margin-top: 1px;
-    }
-
-    /* ──────────────────────────────────────────
-       TECH STRIP
-       ────────────────────────────────────────── */
-    .tech-strip {
-      padding: 24px 0;
-      background: #faf9f6;
-      border-bottom: 1px solid var(--border-light);
-      position: relative;
-      z-index: 10;
-    }
-
-    .tech-inner {
-      display: flex;
-      align-items: center;
-      gap: 36px;
-      overflow-x: auto;
-      scrollbar-width: none;
-    }
-    .tech-inner::-webkit-scrollbar { display: none; }
-
-    .tech-pills {
-      display: flex;
-      gap: 10px;
-      white-space: nowrap;
-    }
-
-    .pill {
-      font-family: var(--mono);
-      font-size: 12px;
-      font-weight: 400;
-      color: var(--fg-muted-light);
-      padding: 6px 16px;
-      border-radius: 99px;
-      border: 1px solid var(--border-light);
-      background: #fff;
-      transition: all 0.25s;
-    }
-    .pill:hover {
-      color: var(--fg-light);
-      border-color: var(--fg-muted-light);
-      background: var(--bg-light);
-    }
-
-    /* ──────────────────────────────────────────
-       DARK THEMED SELECTED WORK: 3D GLASS grid
-       ────────────────────────────────────────── */
-    .work {
-      padding: var(--section-py) 0;
-      background: var(--bg-dark);
-      color: var(--fg-dark);
-      position: relative;
-      overflow: hidden;
-    }
-
-    /* Spotlights */
-    .work::before {
-      content: '';
-      position: absolute;
-      top: -10%;
-      left: 10%;
-      width: 45%;
-      height: 60%;
-      background: radial-gradient(circle, rgba(120, 130, 150, 0.08) 0%, transparent 70%);
-      pointer-events: none;
-    }
-    .work::after {
-      content: '';
-      position: absolute;
-      bottom: -10%;
-      right: 5%;
-      width: 50%;
-      height: 70%;
-      background: radial-gradient(circle, rgba(90, 110, 130, 0.06) 0%, transparent 70%);
-      pointer-events: none;
-    }
-
-    .work-header {
-      margin-bottom: clamp(48px, 8vw, 76px);
-      text-align: center;
-    }
-
-    .work-header .label {
-      color: var(--fg-muted-dark);
-      margin-bottom: 12px;
-      display: block;
-    }
-
-    .work-header .section-heading {
-      color: var(--fg-dark);
-    }
-
-    .work-grid-3d {
-      display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
-      gap: 40px;
-      perspective: 1500px;
-      position: relative;
-      z-index: 5;
-    }
-
-    /* Glassmorphic Project Card */
-    .glass-card-3d {
-      background: rgba(255, 255, 255, 0.03);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
-      border-radius: 24px;
-      padding: 40px;
-      position: relative;
-      transform-style: preserve-3d;
-      transform: rotateY(8deg) rotateX(2deg);
-      box-shadow: 
-        0 30px 60px rgba(0, 0, 0, 0.35),
-        inset 1px 1px 0 rgba(255, 255, 255, 0.1);
-      transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.3s;
-    }
-
-    .glass-card-3d:hover {
-      box-shadow: 
-        0 40px 80px rgba(0, 0, 0, 0.45),
-        inset 1px 1px 0 rgba(255, 255, 255, 0.15);
-    }
-
-    /* Etched circuit pattern overlay on card background */
-    .glass-card-circuit {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      opacity: 0.18;
-      pointer-events: none;
-      z-index: 1;
-      padding: 10px;
-    }
-    .glass-card-circuit svg {
-      width: 100%;
-      height: 100%;
-    }
-
-    .glass-card-content {
-      position: relative;
-      z-index: 2;
-    }
-
-    .glass-card-3d .project-tag {
-      font-family: var(--mono);
-      font-size: 11px;
-      font-weight: 500;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: var(--fg-muted-dark);
-      margin-bottom: 20px;
-    }
-
-    .glass-card-title-row {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      margin-bottom: 18px;
-    }
-
-    .glass-card-3d .project-title {
-      font-family: var(--serif);
-      font-size: clamp(26px, 3.5vw, 34px);
-      font-weight: 600;
-      color: #fff;
-    }
-
-    /* Glowing Live badge */
-    .badge-live-glow {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      font-family: var(--mono);
-      font-size: 10px;
-      font-weight: 600;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      color: #4ade80;
-      background: rgba(74, 222, 128, 0.12);
-      border: 1px solid rgba(74, 222, 128, 0.25);
-      padding: 4px 10px;
-      border-radius: 99px;
-    }
-
-    .badge-live-dot-glow {
-      width: 6px;
-      height: 6px;
-      background: #4ade80;
-      border-radius: 50%;
-      box-shadow: 0 0 10px #4ade80, 0 0 20px rgba(74, 222, 128, 0.4);
-      animation: pulse-glow-green 1.8s infinite;
-    }
-
-    @keyframes pulse-glow-green {
-      0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.4; transform: scale(0.9); }
-    }
-
-    /* Glowing In Development badge */
-    .badge-dev-glow {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      font-family: var(--mono);
-      font-size: 10px;
-      font-weight: 600;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      color: #f59e0b;
-      background: rgba(245, 158, 11, 0.12);
-      border: 1px solid rgba(245, 158, 11, 0.25);
-      padding: 4px 10px;
-      border-radius: 99px;
-    }
-
-    .badge-dev-dot-glow {
-      width: 6px;
-      height: 6px;
-      background: #f59e0b;
-      border-radius: 50%;
-      box-shadow: 0 0 10px #f59e0b, 0 0 20px rgba(245, 158, 11, 0.4);
-      animation: pulse-glow-amber 1.8s infinite;
-    }
-
-    @keyframes pulse-glow-amber {
-      0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.4; transform: scale(0.9); }
-    }
-
-    .glass-card-3d .project-desc {
-      font-size: 15px;
-      line-height: 1.7;
-      color: var(--fg-muted-dark);
-      margin-bottom: 36px;
-      max-width: 520px;
-    }
-
-    /* Stack specifications grid inside the card */
-    .glass-card-stack-specs {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 16px;
-      border-top: 1px solid rgba(255, 255, 255, 0.08);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-      padding: 24px 0;
-      margin-bottom: 32px;
-    }
-
-    .spec-item {
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
-    }
-
-    .spec-val-row {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 13px;
-      font-weight: 600;
-      color: #fff;
-    }
-
-    .spec-icon-svg {
-      width: 14px;
-      height: 14px;
-      fill: currentColor;
-    }
-
-    .spec-lbl {
-      font-size: 11px;
-      color: var(--fg-muted-dark);
-    }
-
-    .glass-card-footer {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-
-    .glass-card-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-
-    .glass-card-tag {
-      font-family: var(--mono);
-      font-size: 11px;
-      padding: 4px 12px;
-      border-radius: 99px;
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid rgba(255, 255, 255, 0.06);
-      color: var(--fg-muted-dark);
-    }
-
-    .glass-card-links {
-      display: flex;
-      gap: 24px;
-    }
-
-    .glass-card-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      font-family: var(--sans);
-      font-size: 13px;
-      font-weight: 600;
-      color: #111;
-      background: #fff;
-      border: 1px solid rgba(255,255,255,0.8);
-      padding: 10px 22px;
-      border-radius: 99px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-      transition: transform 0.25s, background 0.25s;
-    }
-    .glass-card-btn:hover {
-      background: #e5e5e5;
-      transform: translateY(-1px);
-    }
-
-    .glass-card-link-arrow {
-      color: var(--fg-dark);
-      font-weight: 500;
-    }
-    .glass-card-link-arrow::after {
-      background-color: var(--fg-dark);
-    }
-
-    /* Side floaters and next project card */
-    .glass-side-panel {
-      display: flex;
-      flex-direction: column;
-      gap: 24px;
-      justify-content: space-between;
-    }
-
-    .glass-card-floater {
-      background: rgba(255, 255, 255, 0.02);
-      border: 1px solid rgba(255, 255, 255, 0.05);
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
-      border-radius: 18px;
-      padding: 20px 24px;
-      transform: rotateY(-10deg) rotateX(1deg);
-      box-shadow: 0 15px 30px rgba(0,0,0,0.2);
-      transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.3s;
-    }
-    .glass-card-floater:hover {
-      box-shadow: 
-        0 25px 50px rgba(0, 0, 0, 0.35),
-        inset 1px 1px 0 rgba(255, 255, 255, 0.1);
-    }
-    .glass-card-floater.light-glass {
-      background: rgba(255, 255, 255, 0.45);
-      border: 1px solid rgba(0, 0, 0, 0.05);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      border-radius: 20px;
-      padding: 32px 28px;
-      box-shadow: 
-        0 15px 35px rgba(0, 0, 0, 0.03),
-        inset 1px 1px 0 rgba(255, 255, 255, 0.7);
-      position: relative;
-      overflow: hidden;
-      transform-style: preserve-3d;
-      transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.35s, background 0.35s;
-    }
-    .glass-card-floater.light-glass:hover {
-      background: rgba(255, 255, 255, 0.75);
-      border-color: rgba(0, 0, 0, 0.12);
-      box-shadow: 
-        0 25px 50px rgba(0, 0, 0, 0.06),
-        inset 1px 1px 0 rgba(255, 255, 255, 0.8);
-    }
-
-    /* 3D Curved Tech Stack Viewport and Wrapper */
-    .tech-carousel-viewport {
-      perspective: 1500px;
-      width: 100%;
-      overflow: visible;
-      padding: 20px 0;
-      display: flex;
-      justify-content: center;
-    }
-    
-    .tech-cylinder-wrapper {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 32px;
-      max-width: var(--max-w);
-      width: 100%;
-      transform-style: preserve-3d;
-      transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
-      will-change: transform;
-    }
-
-    /* Tech Stack Pills */
-    .tech-cylinder-wrapper .pill {
-      font-family: var(--mono);
-      font-size: 11.5px;
-      font-weight: 500;
-      color: var(--fg-light);
-      padding: 7px 14px;
-      border-radius: 10px;
-      border: 1px solid rgba(0, 0, 0, 0.05);
-      background: rgba(255, 255, 255, 0.7);
-      transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.3s, background 0.3s, border-color 0.3s;
-      transform: translateZ(25px);
-      transform-style: preserve-3d;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.01);
-    }
-    
-    .tech-cylinder-wrapper .pill::before {
-      content: '';
-      display: inline-block;
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background-color: var(--dot-color, #a0aec0);
-      transition: background-color 0.3s;
-    }
-
-    .tech-cylinder-wrapper .pill.fe { --dot-color: #10b981; }
-    .tech-cylinder-wrapper .pill.be { --dot-color: #3b82f6; }
-    .tech-cylinder-wrapper .pill.do { --dot-color: #f59e0b; }
-
-    .tech-cylinder-wrapper .pill:hover {
-      transform: translateZ(45px) scale(1.05);
-      background: #ffffff;
-      border-color: rgba(0, 0, 0, 0.12);
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
-      color: var(--fg-light);
-    }
-
-    .card-bg-pattern {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      pointer-events: none;
-      opacity: 0.05;
-      transition: transform 0.3s;
-      transform: translateZ(5px);
-    }
-    .glass-card-floater .project-tag {
-      margin-bottom: 8px;
-      font-size: 10px;
-    }
-    .glass-card-floater .project-title {
-      font-size: 18px;
-      margin-bottom: 6px;
-    }
-    .glass-card-floater-desc {
-      font-size: 13px;
-      color: var(--fg-muted-dark);
-      line-height: 1.5;
-    }
-
-    .glass-card-floater.cta {
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid rgba(255, 255, 255, 0.09);
-      box-shadow: 0 20px 40px rgba(0,0,0,0.25);
-    }
-
-    .glass-card-floater.cta .btn-dark-pill {
-      background: #fff;
-      color: #111;
-      width: 100%;
-      justify-content: center;
-      font-weight: 600;
-      padding: 10px 20px;
-      margin-top: 14px;
-    }
-    .glass-card-floater.cta .btn-dark-pill:hover {
-      background: #e2e2e2;
-    }
-
-    /* ──────────────────────────────────────────
-       3D JOURNEY & STORYTELLING REDESIGN
-       ────────────────────────────────────────── */
-    .about {
-      padding: var(--section-py) 0;
-      background: var(--bg-light);
-      border-bottom: 1px solid var(--border-light);
-      position: relative;
-    }
-
-    .about-header {
-      text-align: center;
-      margin-bottom: clamp(48px, 8vw, 76px);
-    }
-
-    .about-header .label {
-      margin-bottom: 12px;
-      display: block;
-    }
-
-    .about-headline {
-      font-family: var(--serif);
-      font-size: clamp(30px, 4vw, 42px);
-      font-weight: 600;
-      line-height: 1.15;
-      letter-spacing: -0.015em;
-      color: var(--fg-light);
-      max-width: 800px;
-      margin: 0 auto;
-    }
-
-    .journey-container {
-      position: relative;
-      width: 100%;
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 40px 0;
-      display: flex;
-      flex-direction: column;
-      gap: 80px;
-    }
-
-    /* The responsive ribbon SVG background container */
-    .timeline-ribbon-wrapper {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 100%;
-      height: 100%;
-      max-width: 480px;
-      pointer-events: none;
-      z-index: 1;
-    }
-    .timeline-ribbon-svg {
-      width: 100%;
-      height: 100%;
-    }
-
-    .timeline-row-3d {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 120px;
-      position: relative;
-      z-index: 5;
-      align-items: center;
-    }
-
-    .timeline-left-col {
-      text-align: right;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-    }
-
-    .timeline-right-col {
-      text-align: left;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-    }
-
-    /* Metal timelines blocks */
-    .timeline-box-3d {
-      max-width: 360px;
-      background: linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(245,245,240,0.85) 100%);
-      border: 1px solid rgba(255,255,255,0.9);
-      border-radius: 16px;
-      padding: 24px 28px;
-      box-shadow: 
-        0 15px 35px rgba(0,0,0,0.04),
-        inset 1px 1px 0 #fff;
-      position: relative;
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-    .timeline-box-3d:hover {
-      transform: translateY(-2px);
-      box-shadow: 
-        0 20px 45px rgba(0,0,0,0.06),
-        inset 1px 1px 0 #fff;
-    }
-
-    .timeline-box-3d .title {
-      font-family: var(--serif);
-      font-size: 20px;
-      font-weight: 600;
-      color: var(--fg-light);
-      margin-bottom: 4px;
-    }
-
-    .timeline-box-3d .date {
-      font-family: var(--mono);
-      font-size: 11px;
-      font-weight: 500;
-      letter-spacing: 0.05em;
-      color: var(--fg-muted-light);
-      margin-bottom: 12px;
-      display: block;
-    }
-
-    .timeline-box-3d .desc {
-      font-size: 14px;
-      line-height: 1.6;
-      color: var(--fg-muted-light);
-    }
-
-    /* ──────────────────────────────────────────
-       CLAYMORPHISM HOW I WORK (PROCESS)
-       ────────────────────────────────────────── */
-    .process {
-      padding: var(--section-py) 0;
-    }
-
-    .process-card {
-      border: var(--border);
-      padding: clamp(24px, 3vw, 32px);
-      transition: border-color 0.3s;
-    }
-    .process-card:hover { border-color: rgba(0,0,0,0.28); }
-
-    .process-num {
-      font-family: var(--serif);
-      font-size: clamp(28px, 3vw, 36px);
-      font-weight: 600;
-      color: var(--fg-tertiary);
-      line-height: 1;
-      margin-bottom: 16px;
-    }
-
-    .process-title {
-      font-family: var(--sans);
-      font-size: 15px;
-      font-weight: 600;
-      color: var(--fg);
-      margin-bottom: 8px;
-    }
-
-    .process-desc {
-      font-size: 13px;
-      line-height: 1.7;
-      color: var(--fg-secondary);
-    }
-
-    /* ──────────────────────────────────────────
-       FOOTER
-       ────────────────────────────────────────── */
-    .footer {
-      padding: clamp(32px, 5vw, 48px) 0;
-    }
-
-    .footer-inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 16px;
-    }
-
-    .footer-name {
-      font-family: var(--serif);
-      font-size: 17px;
-      font-weight: 500;
-      letter-spacing: -0.01em;
-    }
-
-    .footer-links {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-
-    .footer-link {
-      font-size: 13px;
-      color: var(--fg-secondary);
-      transition: color 0.2s;
-    }
-    .footer-link:hover { color: var(--fg); }
-
-    .footer-divider {
-      width: 0.5px;
-      height: 13px;
-      background: var(--border-color);
-    }
-
-    /* ──────────────────────────────────────────
-       MOBILE NAV DRAWER
-       ────────────────────────────────────────── */
-    .mobile-drawer {
-      display: none;
-      position: fixed;
-      top: 60px;
-      left: 0;
-      right: 0;
-      background: var(--bg);
-      border-bottom: var(--border);
-      padding: 24px var(--gutter);
-      z-index: 99;
-      flex-direction: column;
-      gap: 20px;
-      opacity: 0;
-      transform: translateY(-8px);
-      transition: opacity 0.25s, transform 0.25s;
-      pointer-events: none;
-    }
-    .mobile-drawer.is-open {
-      display: flex;
-      opacity: 1;
-      transform: translateY(0);
-      pointer-events: auto;
-    }
-
-    .mobile-drawer a {
-      font-size: 15px;
-      font-weight: 500;
-      color: var(--fg-secondary);
-      letter-spacing: 0.02em;
-    }
-
-    .mobile-drawer .btn {
-      margin-top: 4px;
-    }
-
-    /* ──────────────────────────────────────────
-       RESPONSIVE  ≤ 960
-       ────────────────────────────────────────── */
-    @media (max-width: 960px) {
-      .process-grid { grid-template-columns: 1fr 1fr; }
-    }
-
-    /* ──────────────────────────────────────────
-       RESPONSIVE  ≤ 768
-       ────────────────────────────────────────── */
-    @media (max-width: 768px) {
-      .nav-links   { display: none; }
-      .nav-cta     { display: none; }
-      .nav-hamburger { display: flex; }
-
-      .hero-grid           { grid-template-columns: 1fr; }
-      .work-grid           { grid-template-columns: 1fr; }
-      .about-grid          { grid-template-columns: 1fr; }
-      .process-grid        { grid-template-columns: 1fr; }
-
-      .hero { padding: clamp(40px, 8vw, 64px) 0; }
-
-      .hero-actions { flex-direction: column; gap: 16px; }
-      .hero-actions .btn-tactile,
-      .hero-actions .link-cv { width: 100%; text-align: center; }
-
-      .stats-grid { grid-template-columns: 1fr 1fr; }
-
-      .project-metrics { grid-template-columns: 1fr 1fr; }
-      .metric:nth-child(2) { border-right: none; }
-      .metric:nth-child(1),
-      .metric:nth-child(2) {
-        border-bottom: var(--border);
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vaibhav Tiwari — Fullstack Developer &amp; Systems Engineer</title>
+    <meta
+      name="description"
+      content="Vaibhav Tiwari — Fullstack Developer based in Noida, India. High-converting websites for businesses. Production-grade software for technical teams."
+    />
+    <meta
+      name="keywords"
+      content="Vaibhav Tiwari, Fullstack Developer, Noida, Next.js, React, TypeScript, Node.js, FastAPI, Python, Mind-Sync"
+    />
+    <meta name="author" content="Vaibhav Tiwari" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="canonical" href="https://vaibhav-portfolio-930c6.web.app/" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Vaibhav Tiwari — Fullstack Developer" />
+    <meta
+      property="og:description"
+      content="High-converting websites for businesses. Production-grade software for technical teams."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://vaibhav-portfolio-930c6.web.app/" />
+    <meta property="og:image" content="https://vaibhav-portfolio-930c6.web.app/og-image.png" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Vaibhav Tiwari — Fullstack Developer" />
+    <meta
+      name="twitter:description"
+      content="High-converting websites for businesses. Production-grade software for technical teams."
+    />
+    <meta name="twitter:creator" content="@AsterismVaibhav" />
+    <meta name="twitter:image" content="https://vaibhav-portfolio-930c6.web.app/og-image.png" />
+
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+    <!-- Google Fonts: Sans, Mono & Hand-drawn hint -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=DM+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!-- Prevent FOUC (Flash of Unstyled Theme) -->
+    <script>
+      (function () {
+        try {
+          const saved = localStorage.getItem("theme");
+          const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+          const theme = saved || (systemDark ? "dark" : "light");
+          if (theme === "dark") {
+            document.documentElement.classList.add("dark");
+          } else {
+            document.documentElement.classList.remove("dark");
+          }
+          const meta = document.querySelector('meta[name="theme-color"]');
+          if (meta) meta.setAttribute("content", theme === "dark" ? "#09090b" : "#ffffff");
+        } catch (e) {}
+      })();
+    </script>
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Vaibhav Tiwari",
+        "jobTitle": "Fullstack Developer",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Noida",
+          "addressCountry": "India"
+        },
+        "url": "https://vaibhav-portfolio-930c6.web.app/",
+        "sameAs": [
+          "https://github.com/Vaibhavtiwari-dev",
+          "https://x.com/AsterismVaibhav"
+        ]
       }
+    </script>
+  </head>
+  <body id="top">
+    <!-- Accessible Skip Navigation Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
-      .project-footer { flex-direction: column; align-items: flex-start; }
-
-      .footer-inner { flex-direction: column; align-items: flex-start; gap: 20px; }
-      .footer-links { flex-wrap: wrap; gap: 14px; }
-
-      .tech-inner { flex-direction: column; align-items: flex-start; gap: 14px; }
-
-      /* Redesigned 3D Work Grid & Tech Stack Responsiveness */
-      .work-grid-3d {
-        grid-template-columns: 1fr;
-        gap: 32px;
-      }
-      body:not(.gyro-active) .glass-card-3d,
-      body:not(.gyro-active) .glass-card-floater,
-      body:not(.gyro-active) .hero-stats-3d,
-      body:not(.gyro-active) .tech-cylinder-wrapper,
-      body:not(.gyro-active) .tech-cylinder-wrapper .pill,
-      body:not(.gyro-active) .card-bg-pattern {
-        transform: none !important;
-      }
-      .tech-cylinder-wrapper {
-        grid-template-columns: 1fr !important;
-        gap: 24px !important;
-      }
-      .glass-card-3d {
-        padding: 28px;
-      }
-      .glass-card-stack-specs {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 16px;
-      }
-      .work-bottom-floaters {
-        gap: 24px !important;
-        margin-top: 24px !important;
-      }
-
-      /* Hero stats card spacing and flattening */
-      .hero-stats-3d {
-        margin-top: 24px;
-        max-width: 100%;
-      }
-
-      /* Redesigned Journey/Timeline Responsiveness */
-      .timeline-ribbon-wrapper {
-        display: none !important;
-      }
-      .timeline-row-3d {
-        grid-template-columns: 1fr;
-        gap: 24px;
-      }
-      .timeline-row-3d > div:empty {
-        display: none;
-      }
-      .timeline-left-col,
-      .timeline-right-col {
-        text-align: left;
-        align-items: flex-start;
-        padding-top: 0 !important;
-      }
-      .timeline-box-3d {
-        max-width: 100%;
-      }
-
-      /* Redesigned Process cards alignment */
-      .process-container > div {
-        justify-content: center !important;
-      }
-    }
-
-    /* ──────────────────────────────────────────
-       RESPONSIVE  ≤ 480
-       ────────────────────────────────────────── */
-    @media (max-width: 480px) {
-      .hero-headline { font-size: 30px; }
-      .stats-grid { grid-template-columns: 1fr; }
-      .project-metrics { grid-template-columns: 1fr; }
-      .metric { border-right: none !important; border-bottom: var(--border); }
-      .metric:last-child { border-bottom: none; }
-
-      /* Contact form popup modal spacing */
-      .contact-modal {
-        padding: 28px 20px;
-      }
-      /* Project spec items in 1 column on very narrow viewports */
-      .glass-card-stack-specs {
-        grid-template-columns: 1fr;
-        gap: 12px;
-      }
-      .glass-card-footer {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      .glass-card-links {
-        width: 100%;
-        justify-content: space-between;
-      }
-    }
-    /* ──────────────────────────────────────────
-       PROCESS GRID & CUSTOM CLAYMORPHISM
-       ────────────────────────────────────────── */
-    .process-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 32px;
-      margin-top: 48px;
-    }
-
-    .process-card {
-      background: #fbfbf9;
-      border: none;
-      border-radius: 28px;
-      padding: 40px;
-      box-shadow:
-        10px 10px 20px rgba(0, 0, 0, 0.03),
-        -10px -10px 20px rgba(255, 255, 255, 0.9),
-        inset 3px 3px 6px rgba(255, 255, 255, 0.85),
-        inset -3px -3px 6px rgba(0, 0, 0, 0.02);
-      position: relative;
-      z-index: 5;
-      transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.3s ease;
-      max-width: 380px;
-    }
-    
-    .process-card:hover {
-      transform: translateY(-4px) scale(1.01);
-      box-shadow:
-        14px 18px 28px rgba(0, 0, 0, 0.045),
-        -12px -12px 24px rgba(255, 255, 255, 0.95),
-        inset 4px 4px 8px rgba(255, 255, 255, 0.85),
-        inset -4px -4px 8px rgba(0, 0, 0, 0.015);
-    }
-
-    @media (max-width: 768px) {
-      .process-connectors-wrapper {
-        display: none !important;
-      }
-      .process-container {
-        padding: 0 !important;
-        gap: 40px !important;
-      }
-      .process-card {
-        max-width: 100% !important;
-      }
-    }
-
-    /* ──────────────────────────────────────────
-       CONTACT MODAL OVERLAY & POPUP
-       ────────────────────────────────────────── */
-    .contact-modal-overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100vh;
-      background: rgba(12, 13, 14, 0.45);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      z-index: 1000;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-    
-    .contact-modal-overlay.is-active {
-      opacity: 1;
-      pointer-events: auto;
-    }
-    
-    .contact-modal {
-      width: 90%;
-      max-width: 520px;
-      background: linear-gradient(135deg, rgba(251, 251, 249, 0.85) 0%, rgba(243, 243, 238, 0.75) 100%);
-      border: 1.5px solid rgba(255, 255, 255, 0.95);
-      border-radius: 28px;
-      padding: 40px;
-      box-shadow: 
-        0 40px 80px rgba(0, 0, 0, 0.12),
-        inset 1px 1px 0 rgba(255, 255, 255, 0.9);
-      transform: scale(0.92) translateY(20px);
-      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-      position: relative;
-    }
-    
-    .contact-modal-overlay.is-active .contact-modal {
-      transform: scale(1) translateY(0);
-    }
-    
-    .contact-modal-close {
-      position: absolute;
-      top: 24px;
-      right: 24px;
-      width: 36px;
-      height: 36px;
-      border-radius: 50%;
-      background: rgba(0, 0, 0, 0.04);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      transition: background 0.2s, transform 0.2s;
-    }
-    .contact-modal-close:hover {
-      background: rgba(0, 0, 0, 0.08);
-      transform: rotate(90deg);
-    }
-    .contact-modal-close svg {
-      width: 16px;
-      height: 16px;
-      stroke: var(--fg-light);
-    }
-    
-    .contact-modal-title {
-      font-family: var(--serif);
-      font-size: clamp(24px, 3.5vw, 32px);
-      font-weight: 600;
-      color: var(--fg-light);
-      margin-bottom: 8px;
-    }
-    
-    .contact-modal-desc {
-      font-size: 14px;
-      color: var(--fg-muted-light);
-      margin-bottom: 28px;
-      line-height: 1.6;
-    }
-    
-    .contact-form-group {
-      margin-bottom: 20px;
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-      text-align: left;
-    }
-    
-    .contact-form-group label {
-      font-family: var(--mono);
-      font-size: 11px;
-      font-weight: 500;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      color: var(--fg-muted-light);
-    }
-    
-    .contact-form-input {
-      width: 100%;
-      background: rgba(255, 255, 255, 0.65);
-      border: 1px solid rgba(0, 0, 0, 0.07);
-      border-radius: 14px;
-      padding: 14px 18px;
-      font-family: var(--sans);
-      font-size: 14px;
-      color: var(--fg-light);
-      transition: border-color 0.2s, background 0.2s, box-shadow 0.2s;
-    }
-    .contact-form-input:focus {
-      outline: none;
-      border-color: rgba(0, 0, 0, 0.2);
-      background: rgba(255, 255, 255, 0.9);
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
-    }
-    
-    textarea.contact-form-input {
-      resize: vertical;
-      min-height: 120px;
-    }
-    
-    .contact-form-success {
-      display: none;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 30px 0;
-    }
-    
-    .contact-form-success.is-active {
-      display: flex;
-    }
-    
-    .contact-form-success-icon {
-      width: 52px;
-      height: 52px;
-      background: var(--green-bg);
-      color: var(--green-fg);
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 24px;
-      margin-bottom: 20px;
-      box-shadow: 0 4px 12px rgba(54, 102, 16, 0.1);
-    }
-    
-    .contact-form-success-title {
-      font-family: var(--serif);
-      font-size: 26px;
-      font-weight: 600;
-      color: var(--fg-light);
-      margin-bottom: 8px;
-    }
-    
-    .contact-form-success-desc {
-      font-size: 15px;
-      color: var(--fg-muted-light);
-      line-height: 1.6;
-    }
-
-    /* ──────────────────────────────────────────
-       3D CIRCULAR SOCIAL TOKENS (FOOTER)
-       ────────────────────────────────────────── */
-    .social-tokens {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-    }
-    
-    .social-token-btn {
-      width: 44px;
-      height: 44px;
-      border-radius: 50%;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      background: linear-gradient(135deg, #fdfdfc 0%, #ebebe6 100%);
-      border: 1px solid rgba(255, 255, 255, 0.85);
-      box-shadow: 
-        inset 1px 1px 1px rgba(255, 255, 255, 0.95), 
-        inset -1px -1px 1px rgba(0, 0, 0, 0.08), 
-        0 4px 10px rgba(0, 0, 0, 0.04);
-      transition: transform 0.2s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.2s ease, background 0.2s;
-      color: var(--fg-muted-light);
-    }
-    
-    .social-token-btn:hover {
-      transform: translateY(-3px);
-      color: var(--fg-light);
-      background: linear-gradient(135deg, #ffffff 0%, #f3f3ee 100%);
-      box-shadow: 
-        inset 1px 1px 1px rgba(255, 255, 255, 0.95), 
-        inset -1px -1px 1px rgba(0, 0, 0, 0.04), 
-        0 8px 18px rgba(0, 0, 0, 0.07);
-    }
-    
-    .social-token-btn:active {
-      transform: translateY(1px);
-      box-shadow: 
-        inset 1px 1.5px 3px rgba(0, 0, 0, 0.12), 
-        inset -0.5px -0.5px 1px rgba(255, 255, 255, 0.5), 
-        0 2px 4px rgba(0, 0, 0, 0.02);
-    }
-    
-    .social-token-btn svg {
-      width: 18px;
-      height: 18px;
-      fill: currentColor;
-    }
-
-    /* ──────────────────────────────────────────
-       SCROLL REVEAL EFFECTS
-       ────────────────────────────────────────── */
-    .scroll-reveal {
-      opacity: 0;
-      transform: translateY(24px);
-      transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-    
-    .scroll-reveal.is-revealed {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    /* Mobile Gyroscope 3D Parallax Tilt */
-    .gyro-permission-badge {
-      position: fixed;
-      bottom: 24px;
-      right: 24px;
-      background: rgba(255, 255, 255, 0.75);
-      border: 1px solid rgba(0, 0, 0, 0.08);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border-radius: 99px;
-      padding: 10px 20px;
-      box-shadow: 
-        0 10px 30px rgba(0,0,0,0.06),
-        inset 1px 1px 0 rgba(255,255,255,0.6);
-      z-index: 9999;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      transition: opacity 0.4s ease, transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
-      animation: gyroPulse 2s infinite ease-in-out;
-    }
-    .gyro-permission-badge:hover {
-      transform: scale(1.04);
-      background: rgba(255, 255, 255, 0.9);
-    }
-    .gyro-permission-badge:active {
-      transform: scale(0.96);
-    }
-    .gyro-inner {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-family: var(--mono);
-      font-size: 11.5px;
-      font-weight: 600;
-      color: var(--fg-light);
-      letter-spacing: 0.02em;
-    }
-    .gyro-icon {
-      color: #3b82f6;
-    }
-    @keyframes gyroPulse {
-      0% { box-shadow: 0 10px 30px rgba(59, 130, 246, 0.06); }
-      50% { box-shadow: 0 10px 35px rgba(59, 130, 246, 0.16); }
-      100% { box-shadow: 0 10px 30px rgba(59, 130, 246, 0.06); }
-    }
-    
-    body.gyro-active .glass-card-3d,
-    body.gyro-active .glass-card-floater,
-    body.gyro-active .hero-stats-3d,
-    body.gyro-active .timeline-box-3d {
-      transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1) !important;
-    }
-    
-    /* Optimize transition for timeline boxes when we do 3D hover on desktop too */
-    .timeline-box-3d {
-      transform-style: preserve-3d;
-      will-change: transform;
-      transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.35s;
-    }
-  </style>
-</head>
-<body>
-  <a href="#main" class="skip">Skip to main content</a>
-
-  <!-- ═══════════════════════════════════════════
-       NAV
-       ═══════════════════════════════════════════ -->
-  <header class="nav" id="nav">
-    <div class="container nav-inner">
-      <a href="/" class="nav-logo" id="nav-logo">VT</a>
-
-      <ul class="nav-links" id="nav-links" role="list">
-        <li><a href="#work" class="nav-link" id="link-nav-work">Work</a></li>
-        <li><a href="#about" class="nav-link" id="link-nav-about">About</a></li>
-        <li><a href="#process" class="nav-link" id="link-nav-process">Process</a></li>
-        <li><a href="resume.html" class="nav-link" id="link-nav-resume">Resume</a></li>
-      </ul>
-
-      <button class="btn-dark-pill nav-cta js-contact-trigger" id="link-nav-cta">Book a call →</button>
-
-      <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-drawer">
-        <span></span><span></span><span></span>
-      </button>
+    <!-- 1. PULL-CORD THEME TOGGLE (Reference Mechanic) -->
+    <div
+      class="pullcord"
+      id="pullcord"
+      role="button"
+      tabindex="0"
+      aria-label="Toggle theme"
+      aria-pressed="false"
+    >
+      <svg
+        class="pullcord-svg"
+        width="32"
+        height="320"
+        viewBox="0 0 32 320"
+        aria-hidden="true"
+      >
+        <line
+          id="pullcord-line"
+          class="pullcord-string"
+          x1="16"
+          y1="0"
+          x2="16"
+          y2="172"
+        />
+        <g id="pullcord-knob" class="pullcord-knob-group" transform="translate(16, 172)">
+          <!-- Sleek metallic/zinc pull handle -->
+          <circle cx="0" cy="0" r="8" class="pullcord-knob-outer" />
+          <circle cx="0" cy="0" r="3.5" class="pullcord-knob-inner" />
+          <rect x="-3" y="6" width="6" height="14" rx="2.5" class="pullcord-knob-outer" />
+          <line x1="-1.5" y1="10" x2="1.5" y2="10" stroke="currentColor" stroke-width="1" />
+          <line x1="-1.5" y1="14" x2="1.5" y2="14" stroke="currentColor" stroke-width="1" />
+        </g>
+      </svg>
     </div>
-  </header>
 
-  <!-- Mobile drawer -->
-  <nav class="mobile-drawer" id="mobile-drawer" aria-label="Mobile navigation">
-    <a href="#work" class="mobile-nav-link">Work</a>
-    <a href="#about" class="mobile-nav-link">About</a>
-    <a href="#process" class="mobile-nav-link">Process</a>
-    <a href="resume.html" class="mobile-nav-link">Resume</a>
-    <button class="btn btn-dark js-contact-trigger" style="margin-top: 10px;">Book a call →</button>
-  </nav>
+    <!-- Hand-drawn style pull-the-cord hint with arrow (Exact reference integration) -->
+    <div class="cord-hint" id="cord-hint" aria-hidden="true">
+      <span class="cord-hint-text">
+        pull the<br />cord!
+      </span>
+      <svg
+        class="cord-hint-arrow"
+        viewBox="16 11 59 68"
+        width="44"
+        height="50"
+        aria-hidden="true"
+      >
+        <path
+          d="M63.9304352,16.6935883c-0.7543335-0.2961426-1.5021973-0.5897217-2.2429199-0.8804922c-0.4156494-0.151001-0.8272705-0.3005371-1.2348022-0.4485474c-0.8189087-0.2849731-1.6208496-0.5641479-2.4039307-0.8366699c-3.142334-1.060791-6.0206909-1.8996582-8.4889526-2.4821777c-4.9364014-1.164978-8.2321777-1.3042603-8.7171021-0.1418457c-0.4849243,1.1624756,1.9327393,3.4066162,6.2335815,6.0951529c1.8245239,1.140564,4.0041504,2.3630371,6.4287109,3.6149292c-3.9299927,0.5129395-8.5645752,1.7341919-13.3596802,4.0892334c-2.4478149,1.2183838-4.8989258,2.7646484-7.2866211,4.5922241c-2.3288574,1.8961792-4.618042,4.0429077-6.6160278,6.5328979c-4.0496826,4.9500122-6.6275635,10.5092773-8.1968384,15.6245728c-1.5393066,5.1433716-2.2120972,9.887085-2.272583,13.8354492c-0.1154785,1.9729614,0.012085,3.7541504,0.1219482,5.3097534c0.0647583,0.777832,0.1106567,1.4995117,0.2159424,2.1618042c0.1115112,0.6623535,0.2285767,1.265686,0.350769,1.8070068c0.4889526,2.1658325,1.0587769,3.3349609,1.6884766,3.3342896c0.6296387-0.0006104,1.2607422-1.1640625,1.8604736-3.2163696c0.1498413-0.5132446,0.2977295-1.0822754,0.4429321-1.703186c0.1628418-0.6179199,0.3389282-1.2863159,0.5276489-2.0026855c0.3671875-1.4299927,0.6803589-3.0605469,1.182373-4.8129272c0.8353271-3.5391235,2.0805664-7.6299438,3.805542-11.9075317c1.7584839-4.2592163,4.09375-8.6965942,7.3496704-12.6729736c1.6064453-2.0076294,3.4013062-3.7537842,5.2017822-5.3754272c1.8607788-1.5527344,3.755249-2.9500122,5.6772461-4.1428223c3.8567505-2.3618164,7.7036743-4.0240479,11.0596924-5.2119751c0.1141968-0.0405884,0.2226563-0.0770874,0.3356323-0.1167603c-2.00354,2.4140625-3.7368164,4.677124-5.1082764,6.6715088c-2.8739014,4.1792603-4.1975708,7.2007446-3.2896729,8.0737915c0.9078369,0.8730469,3.8753052-0.5675049,7.9391479-3.602478c2.0318604-1.5174561,4.3378906-3.4335327,6.7976074-5.6582031c0.6096802-0.5618896,1.2340698-1.1373901,1.8716431-1.7250366c0.3148193-0.2980347,0.6328735-0.5991821,0.9540405-0.9032593c0.5633545-0.5615845,1.1321411-1.128479,1.7058105-1.7003784c2.5238647-2.5367432,5.1615601-5.2334595,7.8085938-7.9859619C70.7511749,19.4375458,67.2552032,18.0151825,63.9304352,16.6935883z"
+          fill="currentColor"
+        />
+      </svg>
+    </div>
 
-  <main id="main" tabindex="-1">
-
-    <!-- ═══════════════════════════════════════════
-         HERO
-         ═══════════════════════════════════════════ -->
-    <section class="hero" id="hero">
-      <div class="container hero-grid">
-        <div class="hero-content">
-          <div class="badge-available" id="badge-available">
-            <span class="badge-dot" aria-hidden="true"></span>
-            Available for work
-          </div>
-
-          <h1 class="hero-headline">
-            <span class="hero-line" style="display:block">Vaibhav /</span>
-            <span class="hero-line" style="display:block">Tiwari /</span>
-            <span class="hero-line" style="display:block"><em>ships production-grade systems</em></span>
-          </h1>
-
-          <p class="hero-sub">
-            Full-stack engineer who ships tested, documented, deployed software. React, Next.js, TypeScript, Python, PostgreSQL, and AI integration. Based in India.
-          </p>
-
-          <div class="hero-actions">
-            <a href="#work" class="btn-tactile" id="btn-hero-work">View my work →</a>
-            <a href="resume.html" class="link-cv" id="btn-hero-cv">Download CV</a>
-          </div>
-        </div>
-
-        <div class="hero-stats-wrapper">
-          <aside class="hero-stats-3d" aria-label="Key facts" style="will-change: transform;">
-            <span class="label">By the numbers</span>
-            <div class="stats-list">
-              <div class="stat-row" id="stat-shipped">
-                <div class="stat-row-val">3</div>
-                <div class="stat-row-lbl">Projects Built</div>
-              </div>
-              <div class="stat-row" id="stat-solo">
-                <div class="stat-row-val">Solo</div>
-                <div class="stat-row-lbl">Built entirely alone</div>
-              </div>
-              <div class="stat-row" id="stat-stack">
-                <div class="stat-row-val mono">React · Node · TS</div>
-                <div class="stat-row-lbl">Core stack</div>
-              </div>
-              <div class="stat-row" id="stat-cta" style="cursor: pointer;">
-                <div class="stat-row-val js-contact-trigger">Next project</div>
-                <div class="stat-row-lbl">Could be yours</div>
-              </div>
-            </div>
-          </aside>
-        </div>
-      </div>
-    </section>
-
-    <!-- ═══════════════════════════════════════════
-         TECH STACK
-         ═══════════════════════════════════════════ -->
-    <section class="tech-stack scroll-reveal" id="stack" aria-label="Technology stack" style="padding: var(--section-py) 0; background: var(--bg-light); border-bottom: 1px solid var(--border-light); position: relative; z-index: 10; overflow: visible;">
-      <div class="container" style="overflow: visible;">
-        <div class="work-header" style="margin-bottom: 56px; text-align: center;">
-          <p class="label">Expertise</p>
-          <h2 class="section-heading" style="font-family: var(--serif); font-size: clamp(32px, 5vw, 42px); font-weight: 600; color: var(--fg-light); margin-top: 12px;">Technical Stack</h2>
-        </div>
-
-        <div class="tech-carousel-viewport">
-          <div class="tech-cylinder-wrapper">
-            
-            <!-- Card 1: Frontend -->
-            <div class="glass-card-floater light-glass scroll-reveal" id="tech-frontend" style="will-change: transform; transform: rotateY(8deg) translateZ(-20px); transform-style: preserve-3d; position: relative;">
-              <!-- Background Pattern -->
-              <div class="card-bg-pattern">
-                <svg width="100%" height="100%" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M10 10h180v180H10z" stroke="rgba(16, 185, 129, 0.4)" stroke-width="1"/>
-                  <path d="M10 50h180M10 100h180M10 150h180M50 10v180M100 10v180M150 10v180" stroke="rgba(16, 185, 129, 0.2)" stroke-width="1" stroke-dasharray="2 2"/>
-                  <rect x="25" y="65" width="40" height="25" rx="2" fill="none" stroke="rgba(16, 185, 129, 0.4)" stroke-width="1.5"/>
-                  <rect x="75" y="65" width="100" height="25" rx="2" fill="none" stroke="rgba(16, 185, 129, 0.4)" stroke-width="1.5"/>
-                  <circle cx="150" cy="30" r="8" fill="none" stroke="rgba(16, 185, 129, 0.4)" stroke-width="1.5"/>
-                </svg>
-              </div>
-              <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 24px; transform: translateZ(40px); transform-style: preserve-3d;">
-                <span style="display: inline-block; width: 8px; height: 8px; border-radius: 50%; background-color: #10b981; box-shadow: 0 0 8px #10b981;"></span>
-                <h3 style="font-family: var(--serif); font-size: 22px; font-weight: 600; color: var(--fg-light); margin-bottom: 0;">Frontend</h3>
-              </div>
-              <div style="display: flex; flex-wrap: wrap; gap: 10px; transform: translateZ(25px); transform-style: preserve-3d;">
-                <span class="pill fe">React.js</span>
-                <span class="pill fe">Next.js</span>
-                <span class="pill fe">TypeScript</span>
-                <span class="pill fe">Tailwind CSS</span>
-              </div>
-            </div>
-
-            <!-- Card 2: Backend & AI -->
-            <div class="glass-card-floater light-glass scroll-reveal" id="tech-backend" style="will-change: transform; transform: rotateY(0deg) translateZ(10px); transform-style: preserve-3d; position: relative;">
-              <!-- Background Pattern -->
-              <div class="card-bg-pattern">
-                <svg width="100%" height="100%" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="40" cy="50" r="4" fill="#3b82f6"/>
-                  <circle cx="160" cy="60" r="5" fill="#3b82f6"/>
-                  <circle cx="100" cy="110" r="6" fill="#3b82f6"/>
-                  <circle cx="60" cy="160" r="4" fill="#3b82f6"/>
-                  <circle cx="140" cy="150" r="4" fill="#3b82f6"/>
-                  <line x1="40" y1="50" x2="100" y2="110" stroke="rgba(59, 130, 246, 0.3)" stroke-width="1.5"/>
-                  <line x1="160" y1="60" x2="100" y2="110" stroke="rgba(59, 130, 246, 0.3)" stroke-width="1.5"/>
-                  <line x1="60" y1="160" x2="100" y2="110" stroke="rgba(59, 130, 246, 0.3)" stroke-width="1.5"/>
-                  <line x1="140" y1="150" x2="100" y2="110" stroke="rgba(59, 130, 246, 0.3)" stroke-width="1.5"/>
-                </svg>
-              </div>
-              <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 24px; transform: translateZ(40px); transform-style: preserve-3d;">
-                <span style="display: inline-block; width: 8px; height: 8px; border-radius: 50%; background-color: #3b82f6; box-shadow: 0 0 8px #3b82f6;"></span>
-                <h3 style="font-family: var(--serif); font-size: 22px; font-weight: 600; color: var(--fg-light); margin-bottom: 0;">Backend & AI</h3>
-              </div>
-              <div style="display: flex; flex-wrap: wrap; gap: 10px; transform: translateZ(25px); transform-style: preserve-3d;">
-                <span class="pill be">Node.js</span>
-                <span class="pill be">Python</span>
-                <span class="pill be">FastAPI</span>
-                <span class="pill be">PostgreSQL</span>
-                <span class="pill be">Drizzle ORM</span>
-                <span class="pill be">LangChain</span>
-                <span class="pill be">Gemini AI</span>
-              </div>
-            </div>
-
-            <!-- Card 3: DevOps & Quality -->
-            <div class="glass-card-floater light-glass scroll-reveal" id="tech-devops" style="will-change: transform; transform: rotateY(-8deg) translateZ(-20px); transform-style: preserve-3d; position: relative;">
-              <!-- Background Pattern -->
-              <div class="card-bg-pattern">
-                <svg width="100%" height="100%" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="100" cy="100" r="80" fill="none" stroke="rgba(245, 158, 11, 0.2)" stroke-width="2"/>
-                  <circle cx="100" cy="100" r="55" fill="none" stroke="rgba(245, 158, 11, 0.3)" stroke-width="1.5" stroke-dasharray="4 4"/>
-                  <circle cx="100" cy="100" r="30" fill="none" stroke="rgba(245, 158, 11, 0.4)" stroke-width="1"/>
-                  <path d="M100 20v160M20 100h160" stroke="rgba(245, 158, 11, 0.2)" stroke-width="1"/>
-                </svg>
-              </div>
-              <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 24px; transform: translateZ(40px); transform-style: preserve-3d;">
-                <span style="display: inline-block; width: 8px; height: 8px; border-radius: 50%; background-color: #f59e0b; box-shadow: 0 0 8px #f59e0b;"></span>
-                <h3 style="font-family: var(--serif); font-size: 22px; font-weight: 600; color: var(--fg-light); margin-bottom: 0;">DevOps & Quality</h3>
-              </div>
-              <div style="display: flex; flex-wrap: wrap; gap: 10px; transform: translateZ(25px); transform-style: preserve-3d;">
-                <span class="pill do">Docker</span>
-                <span class="pill do">Vitest</span>
-                <span class="pill do">Playwright</span>
-                <span class="pill do">Firebase</span>
-                <span class="pill do">Vercel</span>
-                <span class="pill do">Sentry</span>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ═══════════════════════════════════════════
-         SELECTED WORK
-         ═══════════════════════════════════════════ -->
-    <section class="work" id="work">
-      <div class="container">
-        <div class="work-header">
-          <p class="label">Selected Work</p>
-          <h2 class="section-heading">Things I've built</h2>
-        </div>
-
-        <div class="work-grid-3d">
-          <!-- Mind-Sync -->
-          <article class="glass-card-3d scroll-reveal" id="card-mindsync" style="will-change: transform;">
-            <div class="glass-card-circuit">
-              <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <!-- Center Chip -->
-                <rect x="210" y="210" width="80" height="80" rx="6" stroke="rgba(255,255,255,0.15)" stroke-width="1.5" />
-                <rect x="220" y="220" width="60" height="60" rx="4" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
-                <!-- Chip Pins -->
-                <line x1="230" y1="210" x2="230" y2="195" stroke="rgba(255,255,255,0.15)" stroke-width="1.5" />
-                <line x1="250" y1="210" x2="250" y2="195" stroke="rgba(255,255,255,0.15)" stroke-width="1.5" />
-                <line x1="270" y1="210" x2="270" y2="195" stroke="rgba(255,255,255,0.15)" stroke-width="1.5" />
-                <line x1="230" y1="290" x2="230" y2="305" stroke="rgba(255,255,255,0.15)" stroke-width="1.5" />
-                <line x1="250" y1="290" x2="250" y2="305" stroke="rgba(255,255,255,0.15)" stroke-width="1.5" />
-                <line x1="270" y1="290" x2="270" y2="305" stroke="rgba(255,255,255,0.15)" stroke-width="1.5" />
-                <line x1="210" y1="230" x2="195" y2="230" stroke="rgba(255,255,255,0.15)" stroke-width="1.5" />
-                <line x1="210" y1="250" x2="195" y2="250" stroke="rgba(255,255,255,0.15)" stroke-width="1.5" />
-                <line x1="210" y1="270" x2="195" y2="270" stroke="rgba(255,255,255,0.15)" stroke-width="1.5" />
-                <line x1="290" y1="230" x2="305" y2="230" stroke="rgba(255,255,255,0.15)" stroke-width="1.5" />
-                <line x1="290" y1="250" x2="305" y2="250" stroke="rgba(255,255,255,0.15)" stroke-width="1.5" />
-                <line x1="290" y1="270" x2="305" y2="270" stroke="rgba(255,255,255,0.15)" stroke-width="1.5" />
-                <!-- Circuit Traces -->
-                <path d="M230,195 L230,150 L150,150 L150,80" stroke="rgba(255,255,255,0.12)" stroke-width="1.5" />
-                <circle cx="150" cy="80" r="3" fill="rgba(255,255,255,0.2)" />
-                <path d="M270,195 L270,130 L350,130 L350,60" stroke="rgba(255,255,255,0.12)" stroke-width="1.5" />
-                <circle cx="350" cy="60" r="3" fill="rgba(255,255,255,0.2)" />
-                <path d="M230,305 L230,360 L120,360 L120,420" stroke="rgba(255,255,255,0.12)" stroke-width="1.5" />
-                <circle cx="120" cy="420" r="3" fill="rgba(255,255,255,0.2)" />
-                <path d="M270,305 L270,380 L380,380 L380,440" stroke="rgba(255,255,255,0.12)" stroke-width="1.5" />
-                <circle cx="380" cy="440" r="3" fill="rgba(255,255,255,0.2)" />
-                <path d="M195,250 L120,250 L120,180" stroke="rgba(255,255,255,0.12)" stroke-width="1.5" />
-                <circle cx="120" cy="180" r="3" fill="rgba(255,255,255,0.2)" />
-                <path d="M305,250 L380,250 L380,320" stroke="rgba(255,255,255,0.12)" stroke-width="1.5" />
-                <circle cx="380" cy="320" r="3" fill="rgba(255,255,255,0.2)" />
-              </svg>
-            </div>
-
-            <div class="glass-card-content">
-              <p class="project-tag">AI · Wellness · Full-Stack</p>
-              <div class="glass-card-title-row">
-                <h3 class="project-title">Mind-Sync</h3>
-                <span class="badge-live-glow"><span class="badge-live-dot-glow" aria-hidden="true"></span>Live</span>
-              </div>
-              <p class="project-desc">
-                AI-powered mental wellness platform. Mood tracking, personalized insights, and smart scheduling — built solo, from design to deployment.
-              </p>
-            </div>
-
-            <div class="glass-card-stack-specs">
-              <div class="spec-item">
-                <div class="spec-val-row">
-                  <svg class="spec-icon-svg" viewBox="0 0 24 24"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 2 12 22Z" stroke="currentColor" stroke-width="2" fill="none"/><circle cx="12" cy="12" r="4" fill="currentColor"/></svg>
-                  React
-                </div>
-                <span class="spec-lbl">Frontend</span>
-              </div>
-              <div class="spec-item">
-                <div class="spec-val-row">
-                  <svg class="spec-icon-svg" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="2" fill="none"/></svg>
-                  Node.js
-                </div>
-                <span class="spec-lbl">Backend</span>
-              </div>
-              <div class="spec-item">
-                <div class="spec-val-row">
-                  <svg class="spec-icon-svg" viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6" stroke="currentColor" stroke-width="2" fill="none"/></svg>
-                  Gemini
-                </div>
-                <span class="spec-lbl">AI layer</span>
-              </div>
-              <div class="spec-item">
-                <div class="spec-val-row">
-                  <svg class="spec-icon-svg" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" fill="currentColor"/></svg>
-                  Solo
-                </div>
-                <span class="spec-lbl">Built alone</span>
-              </div>
-            </div>
-
-            <div class="glass-card-footer">
-              <div class="glass-card-tags">
-                <span class="glass-card-tag">Next.js</span>
-                <span class="glass-card-tag">TypeScript</span>
-                <span class="glass-card-tag">PostgreSQL</span>
-                <span class="glass-card-tag">Gemini AI</span>
-              </div>
-              <div class="glass-card-links">
-                <a href="https://mindsync-app-opal.vercel.app/" target="_blank" rel="noopener noreferrer" class="glass-card-btn" id="link-mindsync-live">Try it live →</a>
-                <a href="https://github.com/Vaibhavtiwari-dev/Mind-Sync" target="_blank" rel="noopener noreferrer" class="link-arrow glass-card-link-arrow" id="link-mindsync-github">View on GitHub</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Right Side Column (Side Panel) -->
-          <div class="glass-side-panel">
-            <!-- Floater 1: ARIA- -->
-            <div class="glass-card-floater scroll-reveal" style="will-change: transform;">
-              <p class="project-tag">AI · RAG · Full-Stack</p>
-              <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 6px;">
-                <h4 class="project-title" style="font-family: var(--serif); font-size: 20px; font-weight: 600; color: #fff; margin-bottom: 0;">Aria</h4>
-                <span class="badge-dev-glow"><span class="badge-dev-dot-glow" aria-hidden="true"></span>In Dev</span>
-              </div>
-              <p class="glass-card-floater-desc">
-                Production-grade RAG pipeline for document Q&A with cited answers. Celery + Redis async processing, ChromaDB vector search, streaming WebSocket responses.
-              </p>
-              <a href="https://github.com/Vaibhavtiwari-dev/ARIA-" target="_blank" rel="noopener noreferrer" class="link-arrow glass-card-link-arrow" id="link-aria-github" style="font-size: 12px; margin-top: 10px;">View on GitHub</a>
-            </div>
-
-            <!-- Floater 2: EuroGrant AI -->
-            <div class="glass-card-floater scroll-reveal" style="will-change: transform;">
-              <p class="project-tag">AI · SaaS · B2B</p>
-              <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 6px;">
-                <h4 class="project-title" style="font-family: var(--serif); font-size: 20px; font-weight: 600; color: #fff; margin-bottom: 0;">EuroGrant AI</h4>
-                <span class="badge-dev-glow"><span class="badge-dev-dot-glow" aria-hidden="true"></span>In Dev</span>
-              </div>
-              <p class="glass-card-floater-desc">
-                Architected a B2B SaaS platform automating EU grant discovery and proposal generation — decoupled message queue architecture, Pinecone semantic search, Stripe subscriptions, GDPR-compliant AWS hosting.
-              </p>
-              <a href="https://github.com/Vaibhavtiwari-dev/EuroGrant--AI" target="_blank" rel="noopener noreferrer" class="link-arrow glass-card-link-arrow" id="link-eurogrant-github" style="font-size: 12px; margin-top: 10px;">View on GitHub</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Bottom CTA row (Your Next Project) -->
-        <div class="work-bottom-floaters scroll-reveal" style="display: flex; gap: 40px; margin-top: 40px; perspective: 1500px; justify-content: center;">
-             <div class="glass-card-floater cta" id="card-cta" style="flex: 1; max-width: 680px; will-change: transform; text-align: center;">
-                <p class="project-tag" style="font-family: var(--mono); font-size: 10px; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--fg-muted-dark); margin-bottom: 8px;">Freelance · Client Work</p>
-                <h4 class="project-title" style="font-family: var(--serif); font-size: 22px; font-weight: 600; color: #fff; margin-bottom: 6px;">Your Next Project</h4>
-                <p class="glass-card-floater-desc" style="max-width: 480px; margin: 0 auto 16px;">Got a product idea, a startup MVP, or a legacy app that needs a refresh? Let's build it.</p>
-                <button class="btn-dark-pill js-contact-trigger" style="width: auto; max-width: 280px; margin: 14px auto 0; display: inline-flex; justify-content: center; font-weight: 600; padding: 10px 24px; border-radius: 99px;">Start a conversation →</button>
-             </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ═══════════════════════════════════════════
-         ABOUT & JOURNEY
-         ═══════════════════════════════════════════ -->
-    <section class="about" id="about">
-      <div class="container">
-        <div class="about-header scroll-reveal">
-          <h2 class="about-headline">
-            I don't just write code — <br><em>I engineer outcomes</em>
-          </h2>
-        </div>
-
-        <div class="engineering-standard-callout scroll-reveal" style="text-align: center; margin-bottom: 40px;">
-          <p style="font-family: var(--mono); font-size: 12px; letter-spacing: 0.04em; color: var(--fg-muted-light); line-height: 1.8; max-width: 640px; margin: 0 auto; padding: 16px 24px; background: rgba(0,0,0,0.02); border: 1px solid var(--border-light); border-radius: 12px;">
-            Every project follows a documented engineering standard — automated testing, security review, surgical code changes, and goal-driven execution. See <a href="GEMINI.pdf" target="_blank" rel="noopener noreferrer" style="text-decoration: underline; color: inherit;">GEMINI.md</a>.
-          </p>
-        </div>
-
-        <div class="journey-container">
-          <!-- Winding SVG Ribbon Background -->
-          <div class="timeline-ribbon-wrapper">
-             <svg class="timeline-ribbon-svg" viewBox="0 0 400 1100" fill="none" xmlns="http://www.w3.org/2000/svg">
-               <defs>
-                 <linearGradient id="ribbonGradient" x1="0" y1="0" x2="1" y2="1">
-                   <stop offset="0%" stop-color="#ffffff" />
-                   <stop offset="15%" stop-color="#e1e1e0" />
-                   <stop offset="30%" stop-color="#acacab" />
-                   <stop offset="50%" stop-color="#ffffff" />
-                   <stop offset="70%" stop-color="#9a9a95" />
-                   <stop offset="85%" stop-color="#dfdfdc" />
-                   <stop offset="100%" stop-color="#7c7c77" />
-                 </linearGradient>
-               </defs>
-               
-               <!-- Ribbon Path Shadow (Offset slightly) -->
-               <path d="M 220,50 C 90,80 80,180 220,210 C 350,230 360,330 220,360 C 80,380 70,480 220,510 C 350,530 360,630 220,660 C 80,680 70,780 220,810 C 350,830 360,930 220,960 C 130,980 150,1050 200,1100" 
-                     stroke="rgba(0,0,0,0.04)" stroke-width="46" stroke-linecap="round" fill="none" transform="translate(4, 8)" />
-                     
-               <!-- Main Ribbon Path -->
-               <path d="M 220,50 C 90,80 80,180 220,210 C 350,230 360,330 220,360 C 80,380 70,480 220,510 C 350,530 360,630 220,660 C 80,680 70,780 220,810 C 350,830 360,930 220,960 C 130,980 150,1050 200,1100" 
-                     stroke="url(#ribbonGradient)" stroke-width="44" stroke-linecap="round" fill="none" />
-                     
-               <!-- Metal Nodes/Terminators -->
-               <!-- Top Node -->
-               <g transform="translate(200, 30)">
-                 <rect x="0" y="0" width="40" height="24" rx="4" fill="#d2d2d0" stroke="rgba(255,255,255,0.8)" stroke-width="1" />
-                 <line x1="8" y1="0" x2="8" y2="24" stroke="rgba(0,0,0,0.15)" stroke-width="1.5" />
-                 <line x1="32" y1="0" x2="32" y2="24" stroke="rgba(0,0,0,0.15)" stroke-width="1.5" />
-               </g>
-               <!-- Middle Node -->
-               <g transform="translate(200, 345)">
-                 <rect x="0" y="0" width="40" height="24" rx="4" fill="#d2d2d0" stroke="rgba(255,255,255,0.8)" stroke-width="1" />
-                 <line x1="8" y1="0" x2="8" y2="24" stroke="rgba(0,0,0,0.15)" stroke-width="1.5" />
-                 <line x1="32" y1="0" x2="32" y2="24" stroke="rgba(0,0,0,0.15)" stroke-width="1.5" />
-               </g>
-               <!-- Node 3 -->
-               <g transform="translate(200, 645)">
-                 <rect x="0" y="0" width="40" height="24" rx="4" fill="#d2d2d0" stroke="rgba(255,255,255,0.8)" stroke-width="1" />
-                 <line x1="8" y1="0" x2="8" y2="24" stroke="rgba(0,0,0,0.15)" stroke-width="1.5" />
-                 <line x1="32" y1="0" x2="32" y2="24" stroke="rgba(0,0,0,0.15)" stroke-width="1.5" />
-               </g>
-               <!-- Node 4 (Bottom) -->
-               <g transform="translate(200, 945)">
-                 <rect x="0" y="0" width="40" height="24" rx="4" fill="#d2d2d0" stroke="rgba(255,255,255,0.8)" stroke-width="1" />
-                 <line x1="8" y1="0" x2="8" y2="24" stroke="rgba(0,0,0,0.15)" stroke-width="1.5" />
-                 <line x1="32" y1="0" x2="32" y2="24" stroke="rgba(0,0,0,0.15)" stroke-width="1.5" />
-               </g>
-             </svg>
-          </div>
-          
-          <!-- Row 1: Self-taught development journey (Right) -->
-          <div class="timeline-row-3d">
-             <div class="timeline-left-col"></div>
-             <div class="timeline-right-col" style="padding-top: 10px;">
-                <div class="timeline-box-3d scroll-reveal">
-                   <h4 class="title">Self-taught development journey</h4>
-                   <span class="date">2024</span>
-                   <p class="desc">Began deep-diving into software engineering. Focused on project-based learning across the full stack, mastering TypeScript, React, Node.js, and SQL databases through building tools from scratch.</p>
-                </div>
-             </div>
-          </div>
-          
-          <!-- Row 2: Shipped Mind-Sync (Left) -->
-          <div class="timeline-row-3d">
-             <div class="timeline-left-col" style="padding-top: 40px;">
-                <div class="timeline-box-3d scroll-reveal">
-                   <h4 class="title">Shipped Mind-Sync</h4>
-                   <span class="date">2025</span>
-                   <p class="desc">Built and shipped a solo full-stack AI product. Designed database schemas, wrote clean server APIs, integrated Gemini AI, and implemented comprehensive automated test coverage (193 tests, 223 commits).</p>
-                </div>
-             </div>
-             <div class="timeline-right-col"></div>
-          </div>
-          
-          <!-- Row 3: Built Aria (Right) -->
-          <div class="timeline-row-3d">
-             <div class="timeline-left-col"></div>
-             <div class="timeline-right-col" style="padding-top: 40px;">
-                <div class="timeline-box-3d scroll-reveal">
-                   <h4 class="title">Built Aria — AI Document Intelligence</h4>
-                   <span class="date">2026</span>
-                   <p class="desc">Built a production RAG pipeline — document ingestion, async processing via Celery + Redis, vector search with ChromaDB, streaming WebSocket responses. Designed for real latency targets, not just demos.</p>
-                </div>
-             </div>
-          </div>
-          
-          <!-- Row 4: Architected EuroGrant AI (Left) -->
-          <div class="timeline-row-3d">
-             <div class="timeline-left-col" style="padding-top: 40px;">
-                <div class="timeline-box-3d scroll-reveal">
-                   <h4 class="title">Architected EuroGrant AI</h4>
-                   <span class="date">2026</span>
-                   <p class="desc">Architected a B2B SaaS platform automating EU grant discovery and proposal generation — decoupled message queue architecture, Pinecone semantic search, Stripe subscriptions, GDPR-compliant AWS hosting.</p>
-                </div>
-             </div>
-             <div class="timeline-right-col"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ═══════════════════════════════════════════
-         PROCESS
-         ═══════════════════════════════════════════ -->
-    <section class="process" id="process">
-      <div class="container">
-        <div class="process-header scroll-reveal" style="text-align: center; margin-bottom: 60px;">
-          <p class="label">How I Work</p>
-          <h2 class="section-heading">From brief to deployed</h2>
-        </div>
-        
-        <div class="process-container" style="position: relative; max-width: 780px; margin: 0 auto; display: flex; flex-direction: column; gap: 80px; padding: 40px 0;">
-          <!-- SVG Liquid Connectors Background -->
-          <div class="process-connectors-wrapper" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1;">
-            <svg style="width: 100%; height: 100%;" viewBox="0 0 780 720" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <defs>
-                <linearGradient id="liquidGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stop-color="#fdfdfd" stop-opacity="0.9" />
-                  <stop offset="35%" stop-color="#ecebe7" stop-opacity="0.8" />
-                  <stop offset="50%" stop-color="#ffffff" stop-opacity="0.95" />
-                  <stop offset="65%" stop-color="#e2e1dc" stop-opacity="0.8" />
-                  <stop offset="100%" stop-color="#fcfcfc" stop-opacity="0.9" />
-                </linearGradient>
-                <filter id="liquidShadow" x="-20%" y="-20%" width="140%" height="140%">
-                  <feDropShadow dx="2" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.03" />
-                </filter>
-              </defs>
-              
-              <!-- Tube 1: 01 (Left) -> 02 (Right) -->
-              <path d="M 280,110 C 420,110 360,290 500,290" stroke="rgba(0,0,0,0.02)" stroke-width="36" fill="none" filter="url(#liquidShadow)" />
-              <path d="M 280,110 C 420,110 360,290 500,290" stroke="url(#liquidGrad1)" stroke-width="32" stroke-linecap="round" fill="none" />
-              <path d="M 280,110 C 420,110 360,290 500,290" stroke="rgba(255,255,255,0.7)" stroke-width="8" stroke-linecap="round" fill="none" style="mix-blend-mode: overlay; filter: blur(2px);" />
-              
-              <!-- Tube 2: 02 (Right) -> 03 (Left) -->
-              <path d="M 500,380 C 360,380 420,560 280,560" stroke="rgba(0,0,0,0.02)" stroke-width="36" fill="none" filter="url(#liquidShadow)" />
-              <path d="M 500,380 C 360,380 420,560 280,560" stroke="url(#liquidGrad1)" stroke-width="32" stroke-linecap="round" fill="none" />
-              <path d="M 500,380 C 360,380 420,560 280,560" stroke="rgba(255,255,255,0.7)" stroke-width="8" stroke-linecap="round" fill="none" style="mix-blend-mode: overlay; filter: blur(2px);" />
+    <!-- Site Header -->
+    <header class="site-header" role="banner">
+      <div class="screen-line-before screen-line-after header-container">
+        <a href="#top" class="header-brand" aria-label="Vaibhav Tiwari — Home">
+          <div class="header-brand-mark" aria-hidden="true">
+            <!-- Bespoke VT Monogram Mark -->
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 6 L12 20 L20 6" />
+              <line x1="8" y1="13" x2="16" y2="13" />
             </svg>
           </div>
-          
-          <!-- Step 1: Understand (Left) -->
-          <div style="display: flex; justify-content: flex-start; width: 100%; position: relative; z-index: 5;">
-            <div class="process-card scroll-reveal" id="step-understand">
-              <p class="process-num">01</p>
-              <h3 class="process-title" style="font-family: var(--serif); font-size: 20px; font-weight: 600; color: var(--fg-light); margin-bottom: 12px;">Define Success Criteria</h3>
-              <p class="process-desc" style="font-size: 14px; line-height: 1.6; color: var(--fg-muted-light);">Every project starts with verifiable goals. What does "done" look like? I define acceptance tests, success metrics, and scope boundaries before writing code.</p>
-            </div>
-          </div>
-          
-          <!-- Step 2: Build (Right) -->
-          <div style="display: flex; justify-content: flex-end; width: 100%; position: relative; z-index: 5;">
-            <div class="process-card scroll-reveal" id="step-build">
-              <p class="process-num">02</p>
-              <h3 class="process-title" style="font-family: var(--serif); font-size: 20px; font-weight: 600; color: var(--fg-light); margin-bottom: 12px;">Engineer Production-First</h3>
-              <p class="process-desc" style="font-size: 14px; line-height: 1.6; color: var(--fg-muted-light);">No prototypes disguised as products. Clean architecture, automated tests, CI/CD, error monitoring, and security review — built in from day one, not bolted on after.</p>
-            </div>
-          </div>
-          
-          <!-- Step 3: Deliver (Left) -->
-          <div style="display: flex; justify-content: flex-start; width: 100%; position: relative; z-index: 5;">
-            <div class="process-card scroll-reveal" id="step-deliver">
-              <p class="process-num">03</p>
-              <h3 class="process-title" style="font-family: var(--serif); font-size: 20px; font-weight: 600; color: var(--fg-light); margin-bottom: 12px;">Deliver with Evidence</h3>
-              <p class="process-desc" style="font-size: 14px; line-height: 1.6; color: var(--fg-muted-light);">Test suites passing. Zero lint warnings. Deployed and monitored. I hand over systems with documentation, architecture diagrams, and proof that everything works.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+          <span>Vaibhav Tiwari</span>
+        </a>
 
-    <!-- Credential -->
-    <div class="scroll-reveal" style="text-align: center; padding: 32px 0 0; margin-top: 20px;">
-      <p style="font-family: var(--mono); font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--fg-muted-light);">
-        B.Tech Electrical Engineering — JSS Academy of Technical Education, Noida (2026–Present)
-      </p>
-    </div>
+        <nav class="desktop-nav" aria-label="Main Navigation">
+          <a href="#work" class="nav-link">Work</a>
+          <a href="#stack" class="nav-link">Stack</a>
+          <a href="#services" class="nav-link">Services</a>
+          <a href="#contact" class="nav-link">Contact</a>
+          <a href="resume.html" class="nav-link">Resume ↗</a>
+        </nav>
 
-  </main>
-
-  <footer class="footer" id="footer" role="contentinfo" style="border-top: 1px solid var(--border-light); margin-top: 40px;">
-    <div class="container footer-inner">
-      <span class="footer-name" style="font-family: var(--serif); font-size: 18px; font-weight: 600; color: var(--fg-light);">Vaibhav Tiwari</span>
-      <nav class="footer-links" aria-label="Footer links">
-        <div class="social-tokens">
-          <a href="https://github.com/Vaibhavtiwari-dev" target="_blank" rel="noopener noreferrer" class="social-token-btn" id="link-footer-github" aria-label="GitHub Profile">
-            <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482C19.138 20.193 22 16.44 22 12.017 22 6.484 17.522 2 12 2z"/></svg>
+        <div class="header-actions">
+          <!-- GitHub Link -->
+          <a
+            href="https://github.com/Vaibhavtiwari-dev"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="icon-btn"
+            aria-label="GitHub Profile"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+            </svg>
           </a>
-          <a href="https://x.com/AsterismVaibhav" target="_blank" rel="noopener noreferrer" class="social-token-btn" id="link-footer-twitter" aria-label="Twitter Profile">
-            <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-          </a>
-          <button class="social-token-btn js-contact-trigger" id="link-footer-email" aria-label="Open Contact Form">
-            <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+
+          <!-- Mobile Theme Toggle Button -->
+          <button
+            class="icon-btn mobile-theme-btn"
+            id="mobile-theme-toggle"
+            aria-label="Toggle light and dark theme"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+            </svg>
+          </button>
+
+          <!-- Mobile Hamburger Toggle Button -->
+          <button
+            class="mobile-nav-toggle"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
           </button>
         </div>
-      </nav>
-    </div>
-  </footer>
-
-  <!-- ═══════════════════════════════════════════
-       CONTACT MODAL DIALOG
-       ═══════════════════════════════════════════ -->
-  <div class="contact-modal-overlay" id="contact-modal-overlay" aria-hidden="true" role="dialog">
-    <div class="contact-modal" id="contact-modal">
-      <button class="contact-modal-close" id="contact-modal-close" aria-label="Close contact form">
-        <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-      </button>
-      
-      <!-- Form Content -->
-      <div id="contact-form-content">
-        <h3 class="contact-modal-title">Let's build something</h3>
-        <p class="contact-modal-desc">Drop me a line about your project idea, contract role, or just say hello. I'll get back to you within 24 hours.</p>
-        
-        <form id="contact-form" action="https://formspree.io/f/xgegpepj" method="POST">
-          <div class="contact-form-group">
-            <label for="contact-name">Name</label>
-            <input type="text" id="contact-name" name="name" class="contact-form-input" required placeholder="John Doe" />
-          </div>
-          <div class="contact-form-group">
-            <label for="contact-email">Email Address</label>
-            <input type="email" id="contact-email" name="email" class="contact-form-input" required placeholder="john@example.com" />
-          </div>
-          <div class="contact-form-group">
-            <label for="contact-message">Message</label>
-            <textarea id="contact-message" name="message" class="contact-form-input" required placeholder="Tell me about your product or project..."></textarea>
-          </div>
-          <button type="submit" class="btn-tactile" style="width: 100%; margin-top: 10px;">Send message →</button>
-        </form>
       </div>
-      
-      <!-- Success Message -->
-      <div class="contact-form-success" id="contact-form-success">
-        <div class="contact-form-success-icon" aria-hidden="true">✓</div>
-        <h3 class="contact-form-success-title">Message Sent!</h3>
-        <p class="contact-form-success-desc">Thank you for reaching out. I have received your message and will get back to you shortly.</p>
-        <button type="button" class="btn-tactile" id="contact-success-close-btn" style="margin-top: 24px; min-width: 140px;">Close</button>
-      </div>
+    </header>
+
+    <!-- Mobile Drawer -->
+    <div
+      class="mobile-drawer"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Mobile Navigation"
+    >
+      <a href="#work" class="nav-link">Work</a>
+      <a href="#stack" class="nav-link">Stack</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#contact" class="nav-link">Contact</a>
+      <a href="resume.html" class="nav-link">Resume ↗</a>
+      <a
+        href="https://wa.me/TODO_REPLACE_WITH_PHONE?text=Hi%20Vaibhav%2C%20I%20would%20like%20to%20request%20a%20free%203-day%20demo%20for%20my%20business%20website"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn-action btn-whatsapp-action"
+        style="justify-content: center; margin-top: 0.5rem;"
+      >
+        <span>Chat on WhatsApp</span>
+      </a>
     </div>
-  </div>
 
-  <script>
-    /* Unregister stale service worker from old Deep Space theme */
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.getRegistrations().then(registrations => {
-        registrations.forEach(r => r.unregister());
-      });
-      caches.keys().then(names => {
-        names.forEach(name => caches.delete(name));
-      });
-    }
-
-    /* Mobile menu */
-    const hamburger = document.getElementById('nav-hamburger');
-    const drawer = document.getElementById('mobile-drawer');
-    const mainContent = document.getElementById('main');
-    const footer = document.getElementById('footer');
-
-    const toggleMenu = (open) => {
-      hamburger.classList.toggle('is-active', open);
-      drawer.classList.toggle('is-open', open);
-      hamburger.setAttribute('aria-expanded', String(open));
-      hamburger.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
-      
-      // Accessibility: manage background screen reader focus
-      if (open) {
-        mainContent.setAttribute('inert', '');
-        footer.setAttribute('inert', '');
-        // focus the first link inside drawer
-        const firstLink = drawer.querySelector('a, button');
-        if (firstLink) firstLink.focus();
-      } else {
-        mainContent.removeAttribute('inert');
-        footer.removeAttribute('inert');
-        hamburger.focus();
-      }
-    };
-
-    hamburger.addEventListener('click', () => {
-      const open = !drawer.classList.contains('is-open');
-      toggleMenu(open);
-    });
-
-    drawer.querySelectorAll('a, button').forEach(link => {
-      link.addEventListener('click', () => {
-        toggleMenu(false);
-      });
-    });
-
-    // Close on Escape key press
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && drawer.classList.contains('is-open')) {
-        toggleMenu(false);
-      }
-    });
-
-    /* ──────────────────────────────────────────
-       CONTACT MODAL STATE MANAGEMENT
-       ────────────────────────────────────────── */
-    const modalOverlay = document.getElementById('contact-modal-overlay');
-    const modalClose = document.getElementById('contact-modal-close');
-    const successCloseBtn = document.getElementById('contact-success-close-btn');
-    const contactForm = document.getElementById('contact-form');
-    const contactFormContent = document.getElementById('contact-form-content');
-    const contactFormSuccess = document.getElementById('contact-form-success');
-    const contactTriggers = document.querySelectorAll('.js-contact-trigger');
-
-    const toggleModal = (show) => {
-      if (show) {
-        modalOverlay.classList.add('is-active');
-        modalOverlay.setAttribute('aria-hidden', 'false');
-        document.body.style.overflow = 'hidden'; // prevent background scrolling
-        // focus first input
-        setTimeout(() => {
-          document.getElementById('contact-name').focus();
-        }, 100);
-      } else {
-        modalOverlay.classList.remove('is-active');
-        modalOverlay.setAttribute('aria-hidden', 'true');
-        document.body.style.overflow = '';
+    <!-- Main Container Single Column Layout -->
+    <main id="main-content" class="page-wrapper">
+      <div class="portfolio-column">
         
-        // Reset success state after close animation completes
-        setTimeout(() => {
-          contactFormContent.style.display = 'block';
-          contactFormSuccess.classList.remove('is-active');
-          contactForm.reset();
-        }, 400);
-      }
-    };
-
-    contactTriggers.forEach(trigger => {
-      trigger.addEventListener('click', (e) => {
-        e.preventDefault();
-        toggleModal(true);
-      });
-    });
-
-    modalClose.addEventListener('click', () => toggleModal(false));
-    successCloseBtn.addEventListener('click', () => toggleModal(false));
-
-    // Close on overlay click
-    modalOverlay.addEventListener('click', (e) => {
-      if (e.target === modalOverlay) {
-        toggleModal(false);
-      }
-    });
-
-    // Close on Escape key press
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && modalOverlay.classList.contains('is-active')) {
-        toggleModal(false);
-      }
-    });
-
-    // Form submission intercept
-    contactForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      
-      const submitBtn = contactForm.querySelector('button[type="submit"]');
-      const originalText = submitBtn.textContent;
-      submitBtn.textContent = 'Sending...';
-      submitBtn.disabled = true;
-      
-      const formData = new FormData(contactForm);
-      
-      fetch(contactForm.action, {
-        method: 'POST',
-        body: formData,
-        headers: {
-          'Accept': 'application/json'
-        }
-      })
-      .then(response => {
-        if (response.ok) {
-          // Transition to success state
-          contactFormContent.style.display = 'none';
-          contactFormSuccess.classList.add('is-active');
-        } else {
-          throw new Error('Server returned ' + response.status);
-        }
-      })
-      .catch(error => {
-        // Show error with fallback mailto link
-        submitBtn.textContent = originalText;
-        submitBtn.disabled = false;
-        const errorDiv = document.createElement('div');
-        errorDiv.style.cssText = 'margin-top: 12px; padding: 12px 16px; background: #fef2f2; border: 1px solid #fecaca; border-radius: 12px; font-size: 13px; color: #991b1b; line-height: 1.5;';
-        errorDiv.innerHTML = 'Something went wrong. Please try again or <a href="mailto:vaibhav09012007@gmail.com" style="color: #991b1b; font-weight: 600; text-decoration: underline;">email me directly</a>.';
-        // Remove any existing error message
-        const existing = contactForm.querySelector('.form-error-msg');
-        if (existing) existing.remove();
-        errorDiv.classList.add('form-error-msg');
-        contactForm.appendChild(errorDiv);
-      })
-      .finally(() => {
-        submitBtn.textContent = originalText;
-        submitBtn.disabled = false;
-      });
-    });
-
-    /* ──────────────────────────────────────────
-       SCROLL REVEAL (INTERSECTION OBSERVER)
-       ────────────────────────────────────────── */
-    const revealCallback = (entries, observer) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-revealed');
-          observer.unobserve(entry.target); // trigger once
-        }
-      });
-    };
-
-    const revealObserver = new IntersectionObserver(revealCallback, {
-      root: null,
-      threshold: 0.1,
-      rootMargin: '0px 0px -40px 0px'
-    });
-
-    document.querySelectorAll('.scroll-reveal').forEach(el => {
-      revealObserver.observe(el);
-    });
-
-    /* ──────────────────────────────────────────
-       3D PARALLAX HOVER EFFECT
-       ────────────────────────────────────────── */
-    const maxTilt = 10; // max tilt degrees (user-approved)
-    const cards3d = document.querySelectorAll('.glass-card-3d, .hero-stats-3d, .glass-card-floater, .timeline-box-3d');
-
-    // Track default rest state transformations
-    const getRestTransform = (element) => {
-      if (element.classList.contains('hero-stats-3d')) {
-        return 'rotateY(-18deg) rotateX(10deg) rotateZ(2deg)';
-      }
-      if (element.classList.contains('glass-card-3d')) {
-        return 'rotateY(8deg) rotateX(2deg)';
-      }
-      // Check inline style rotation for bottom floaters
-      if (element.style.transform) {
-        return element.style.transform;
-      }
-      return '';
-    };
-
-    cards3d.forEach(card => {
-      const restTransform = getRestTransform(card);
-      
-      card.addEventListener('mousemove', (e) => {
-        if (window.innerWidth <= 768) return;
-        
-        const rect = card.getBoundingClientRect();
-        const x = e.clientX - rect.left; // x coordinate inside the card
-        const y = e.clientY - rect.top;  // y coordinate inside the card
-        
-        const centerX = rect.width / 2;
-        const centerY = rect.height / 2;
-        
-        // Percent offset from center (-1 to 1)
-        const percentX = (x - centerX) / centerX;
-        const percentY = (y - centerY) / centerY;
-        
-        // Calculate tilt
-        const tiltX = (percentY * maxTilt).toFixed(2); // rotation around X-axis (depends on vertical cursor pos)
-        const tiltY = (percentX * -maxTilt).toFixed(2); // rotation around Y-axis (depends on horizontal cursor pos)
-        
-        if (restTransform && (card.id === 'tech-frontend' || card.id === 'tech-backend' || card.id === 'tech-devops')) {
-          card.style.transform = `perspective(1000px) ${restTransform} rotateX(${tiltX}deg) rotateY(${tiltY}deg) scale3d(1.02, 1.02, 1.02)`;
-        } else {
-          card.style.transform = `perspective(1000px) rotateX(${tiltX}deg) rotateY(${tiltY}deg) scale3d(1.02, 1.02, 1.02)`;
-        }
-      });
-      
-      card.addEventListener('mouseleave', () => {
-        card.style.transform = restTransform;
-      });
-    });
-
-    /* ──────────────────────────────────────────
-       3D ROTATING CYLINDER VIEWPORT EFFECT (TECH STACK)
-       ────────────────────────────────────────── */
-    const techViewport = document.querySelector('.tech-carousel-viewport');
-    const techWrapper = document.querySelector('.tech-cylinder-wrapper');
-    if (techViewport && techWrapper) {
-      techViewport.addEventListener('mousemove', (e) => {
-        if (window.innerWidth <= 768) return;
-        
-        const rect = techViewport.getBoundingClientRect();
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
-        
-        const centerX = rect.width / 2;
-        const centerY = rect.height / 2;
-        
-        const percentX = (x - centerX) / centerX;
-        const percentY = (y - centerY) / centerY;
-        
-        const angleY = (percentX * -12).toFixed(2);
-        const angleX = (percentY * 6).toFixed(2);
-        
-        techWrapper.style.transform = `rotateY(${angleY}deg) rotateX(${angleX}deg)`;
-      });
-      
-      techViewport.addEventListener('mouseleave', () => {
-        techWrapper.style.transform = 'rotateY(0deg) rotateX(0deg)';
-      });
-    }
-
-    /* ──────────────────────────────────────────
-       MOBILE GYROSCOPE 3D TILT EFFECT
-       ────────────────────────────────────────── */
-    let gyroActive = false;
-    let targetBeta = 0;
-    let targetGamma = 0;
-    let currentBeta = 0;
-    let currentGamma = 0;
-
-    function initGyroscope() {
-      gyroActive = true;
-      document.body.classList.add('gyro-active');
-      
-      window.addEventListener('deviceorientation', (e) => {
-        if (e.beta === null || e.gamma === null) return;
-        
-        // Calibrate rest angle Beta held at ~45 degrees towards the user
-        let betaOffset = e.beta - 45;
-        let gammaOffset = e.gamma;
-        
-        // Clamp orientation tilt offsets (up to 25 degrees of rotation deviation)
-        betaOffset = Math.max(-25, Math.min(25, betaOffset));
-        gammaOffset = Math.max(-25, Math.min(25, gammaOffset));
-        
-        // Normalize values between -1 and 1
-        targetBeta = betaOffset / 25;
-        targetGamma = gammaOffset / 25;
-      });
-      
-      // Start LERP loop
-      requestAnimationFrame(updateGyroParallax);
-    }
-
-    function updateGyroParallax() {
-      if (!gyroActive) return;
-      
-      // Linear Interpolation (LERP) for high-fluidity dampening (factor of 0.1)
-      currentBeta += (targetBeta - currentBeta) * 0.1;
-      currentGamma += (targetGamma - currentGamma) * 0.1;
-      
-      // Convert normalized dampening to degrees (max tilt 10 degrees)
-      const tiltX = (currentBeta * 10).toFixed(2);  // rotation around X-axis
-      const tiltY = (currentGamma * -10).toFixed(2); // rotation around Y-axis
-      
-      // 1. Apply physical tilt transforms to all cards on mobile viewports
-      const mobileTiltCards = document.querySelectorAll('.glass-card-3d, .hero-stats-3d, .glass-card-floater, .timeline-box-3d');
-      mobileTiltCards.forEach(card => {
-        if (window.innerWidth <= 768) {
-          card.style.transform = `perspective(1000px) rotateX(${tiltX}deg) rotateY(${tiltY}deg)`;
-        }
-      });
-      
-      // 2. Rotate the entire tech stack curved segment segment curvely
-      const mobileTechWrapper = document.querySelector('.tech-cylinder-wrapper');
-      if (mobileTechWrapper && window.innerWidth <= 768) {
-        const wrapperAngleY = (currentGamma * -12).toFixed(2);
-        const wrapperAngleX = (currentBeta * 6).toFixed(2);
-        mobileTechWrapper.style.transform = `rotateY(${wrapperAngleY}deg) rotateX(${wrapperAngleX}deg)`;
-      }
-      
-      requestAnimationFrame(updateGyroParallax);
-    }
-
-    // Auto-detect and initialization
-    window.addEventListener('DOMContentLoaded', () => {
-      const isMobile = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent) || window.innerWidth <= 768;
-      if (!isMobile) return;
-      
-      if (typeof DeviceOrientationEvent !== 'undefined' && typeof DeviceOrientationEvent.requestPermission === 'function') {
-        // iOS 13+ device orientation prompt badge creation
-        const badge = document.createElement('div');
-        badge.className = 'gyro-permission-badge';
-        badge.innerHTML = `
-          <div class="gyro-inner">
-            <svg class="gyro-icon" viewBox="0 0 24 24" width="16" height="16">
-              <path fill="currentColor" d="M16 1H8C6.9 1 6 1.9 6 3v18c0 1.1 0.9 2 2 2h8c1.1 0 2-.9 2-2V3c0-1.1-.9-2-2-2zm0 18H8V5h8v14z"/>
+        <!-- 1. PROFILE COVER: DOTTED-PATTERN BAND & HAIRLINES -->
+        <div class="screen-line-before screen-line-after profile-cover">
+          <div class="brand-monogram-wrap" aria-label="Vaibhav Tiwari Monogram">
+            <svg viewBox="0 0 160 80" width="100%" height="100%" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="156" height="76" rx="6" stroke-opacity="0.2" stroke-dasharray="4 4" />
+              <!-- Geometric V T mark -->
+              <path d="M48 24 L68 58 L88 24" stroke-width="2.2" />
+              <path d="M96 24 L126 24 M111 24 L111 58" stroke-width="2.2" />
             </svg>
-            <span>Enable 3D Tilt</span>
           </div>
-        `;
-        document.body.appendChild(badge);
-        
-        badge.addEventListener('click', () => {
-          DeviceOrientationEvent.requestPermission()
-            .then(response => {
-              if (response === 'granted') {
-                badge.style.opacity = '0';
-                badge.style.transform = 'scale(0.8) translateY(10px)';
-                setTimeout(() => badge.remove(), 400);
-                initGyroscope();
-              }
-            })
-            .catch(console.error);
-        });
-      } else {
-        // Android or non-iOS orientation detector
-        if (window.DeviceOrientationEvent) {
-          const testGyro = (e) => {
-            if (e.beta !== null && e.gamma !== null) {
-              initGyroscope();
-            }
-            window.removeEventListener('deviceorientation', testGyro);
-          };
-          window.addEventListener('deviceorientation', testGyro);
-        }
-      }
-    });
-  </script>
-</body>
+        </div>
+
+        <!-- 2. PROFILE HEADER: AVATAR + HATCH STRIP + H1 -->
+        <div class="screen-line-after profile-header">
+          <div class="profile-avatar-column">
+            <img
+              src="profile.jpg"
+              alt="Vaibhav Tiwari"
+              class="profile-avatar-img"
+              width="152"
+              height="152"
+              loading="eager"
+            />
+          </div>
+
+          <div class="profile-info-column">
+            <div class="profile-hatch-top">
+              <span class="profile-mono-tag">Fullstack Developer · Systems Engineer</span>
+            </div>
+
+            <div class="profile-name-bar">
+              <h1 class="profile-h1">
+                <span>Vaibhav Tiwari</span>
+                <svg class="verified-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.6 2.25A2.25 2.25 0 0 0 6.64 3.7l-.46 1.4a2.25 2.25 0 0 1-1.48 1.48l-1.4.46a2.25 2.25 0 0 0-1.45 1.96l-.08 1.48a2.25 2.25 0 0 1-.92 1.88l-1.22.84a2.25 2.25 0 0 0 0 2.46l1.22.84a2.25 2.25 0 0 1 .92 1.88l.08 1.48a2.25 2.25 0 0 0 1.45 1.96l1.4.46a2.25 2.25 0 0 1 1.48 1.48l.46 1.4a2.25 2.25 0 0 0 1.96 1.45l1.48.08a2.25 2.25 0 0 1 1.88.92l.84 1.22a2.25 2.25 0 0 0 2.46 0l.84-1.22a2.25 2.25 0 0 1 1.88-.92l1.48-.08a2.25 2.25 0 0 0 1.96-1.45l.46-1.4a2.25 2.25 0 0 1 1.48-1.48l1.4-.46a2.25 2.25 0 0 0 1.45-1.96l.08-1.48a2.25 2.25 0 0 1 .92-1.88l1.22-.84a2.25 2.25 0 0 0 0-2.46l-1.22-.84a2.25 2.25 0 0 1-.92-1.88l-.08-1.48a2.25 2.25 0 0 0-1.45-1.96l-1.4-.46a2.25 2.25 0 0 1-1.48-1.48l-.46-1.4a2.25 2.25 0 0 0-1.96-1.45l-1.48-.08a2.25 2.25 0 0 1-1.88-.92l-.84-1.22a2.25 2.25 0 0 0-2.46 0l-.84 1.22a2.25 2.25 0 0 1-1.88.92l-1.48.08zM16.53 9.47a.75.75 0 0 0-1.06-1.06L10.5 13.38l-1.97-1.97a.75.75 0 1 0-1.06 1.06l2.5 2.5c.3.3.77.3 1.06 0l5.5-5.5z" />
+                </svg>
+              </h1>
+            </div>
+
+            <div class="profile-positioning">
+              <strong>High-converting websites for businesses. Production-grade software for technical teams.</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="separator" aria-hidden="true"></div>
+
+        <!-- 3. OVERVIEW PANEL -->
+        <section class="screen-line-before screen-line-after panel" id="overview" aria-label="Overview">
+          <div class="panel-body">
+            <div class="overview-grid">
+              <div class="overview-item">
+                <svg class="overview-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+                <div class="overview-text">
+                  <strong>Fullstack Developer</strong> · AI Systems Engineer
+                </div>
+              </div>
+
+              <div class="overview-item">
+                <svg class="overview-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <div class="overview-text">
+                  <span>Noida, India</span>
+                </div>
+              </div>
+
+              <div class="overview-item">
+                <svg class="overview-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+                <div class="overview-text">
+                  <span>B.Tech in Electrical Engineering · JSS Noida (1st Year)</span>
+                </div>
+              </div>
+
+              <div class="overview-item">
+                <span class="status-dot-pulse" aria-hidden="true" style="margin-top: 0.35rem;"></span>
+                <div class="overview-text">
+                  <span class="status-pill-inline">Available for select projects &amp; engineering contracts</span>
+                </div>
+              </div>
+
+              <div class="overview-item">
+                <svg class="overview-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                </svg>
+                <div class="overview-text">
+                  <a href="mailto:vaibhav09012007@gmail.com">vaibhav09012007@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="overview-item">
+                <svg class="overview-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+                <div class="overview-text">
+                  <a href="https://vaibhav-portfolio-930c6.web.app/" target="_blank" rel="noopener noreferrer">vaibhav-portfolio-930c6.web.app</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="separator" aria-hidden="true"></div>
+
+        <!-- 4. SELECTED WORK: SHIPPED & IN DEV (MAX 3, AUTHENTIC COMMIT RECORDS) -->
+        <section class="screen-line-before screen-line-after panel" id="work">
+          <div class="screen-line-after panel-header">
+            <h2 class="panel-title">
+              Projects
+              <sup class="panel-count">(3)</sup>
+            </h2>
+          </div>
+
+          <div class="project-list">
+            <!-- Project 1: Mind-Sync (Flagship) -->
+            <article class="project-item">
+              <div class="project-row">
+                <div class="project-logo-box" aria-hidden="true">
+                  MS
+                </div>
+                <div class="project-main">
+                  <div class="project-title-line">
+                    <h3 class="project-title">Mind-Sync</h3>
+                    <span class="badge badge-shipped">
+                      <span class="badge-dot"></span>
+                      Shipped · Live
+                    </span>
+                  </div>
+                  <p class="project-one-liner">
+                    Full-stack AI mental wellness and productivity platform. Built solo from schema to cloud with 223+ commits and 193 automated tests.
+                  </p>
+                  <div class="tag-list">
+                    <span class="tag">Next.js 14</span>
+                    <span class="tag">TypeScript</span>
+                    <span class="tag">PostgreSQL</span>
+                    <span class="tag">Gemini AI</span>
+                    <span class="tag">Vitest</span>
+                    <span class="tag">Drizzle ORM</span>
+                  </div>
+                  <div class="project-actions">
+                    <a
+                      href="https://mindsync-app-opal.vercel.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="btn-quiet"
+                    >
+                      <span>Live App ↗</span>
+                    </a>
+                    <a
+                      href="https://github.com/Vaibhavtiwari-dev/Mind-Sync"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="btn-quiet"
+                    >
+                      <span>GitHub ↗</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 2: Aria (In Dev) -->
+            <article class="project-item">
+              <div class="project-row">
+                <div class="project-logo-box" aria-hidden="true">
+                  AR
+                </div>
+                <div class="project-main">
+                  <div class="project-title-line">
+                    <h3 class="project-title">Aria</h3>
+                    <span class="badge badge-dev">
+                      <span class="badge-dot"></span>
+                      In Dev
+                    </span>
+                  </div>
+                  <p class="project-one-liner">
+                    Production RAG document intelligence platform with verifiable page-level citations and streaming WebSockets.
+                  </p>
+                  <div class="tag-list">
+                    <span class="tag">FastAPI</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">LangChain</span>
+                    <span class="tag">ChromaDB</span>
+                    <span class="tag">Redis</span>
+                    <span class="tag">WebSocket</span>
+                  </div>
+                  <div class="project-actions">
+                    <a
+                      href="https://github.com/Vaibhavtiwari-dev/ARIA-"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="btn-quiet"
+                    >
+                      <span>GitHub ↗</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 3: EuroGrant AI (In Dev) -->
+            <article class="project-item">
+              <div class="project-row">
+                <div class="project-logo-box" aria-hidden="true">
+                  EG
+                </div>
+                <div class="project-main">
+                  <div class="project-title-line">
+                    <h3 class="project-title">EuroGrant AI</h3>
+                    <span class="badge badge-dev">
+                      <span class="badge-dot"></span>
+                      In Dev
+                    </span>
+                  </div>
+                  <p class="project-one-liner">
+                    B2B public grant discovery and proposal automation powered by semantic vector search against EU tender databases.
+                  </p>
+                  <div class="tag-list">
+                    <span class="tag">FastAPI</span>
+                    <span class="tag">Next.js</span>
+                    <span class="tag">Pinecone</span>
+                    <span class="tag">PostgreSQL</span>
+                    <span class="tag">Stripe</span>
+                    <span class="tag">Docker</span>
+                  </div>
+                  <div class="project-actions">
+                    <a
+                      href="https://github.com/Vaibhavtiwari-dev/EuroGrant--AI"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="btn-quiet"
+                    >
+                      <span>GitHub ↗</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <div class="separator" aria-hidden="true"></div>
+
+        <!-- 5. COMPACT STACK STRIP -->
+        <section class="screen-line-before screen-line-after panel" id="stack">
+          <div class="screen-line-after panel-header">
+            <h2 class="panel-title">Stack</h2>
+          </div>
+          <div class="stack-body">
+            <div class="stack-strip">
+              <span class="stack-pill">TypeScript</span>
+              <span class="stack-pill">Next.js</span>
+              <span class="stack-pill">React</span>
+              <span class="stack-pill">Python</span>
+              <span class="stack-pill">FastAPI</span>
+              <span class="stack-pill">Node.js</span>
+              <span class="stack-pill">PostgreSQL</span>
+              <span class="stack-pill">Docker</span>
+              <span class="stack-pill">Tailwind CSS</span>
+              <span class="stack-pill">Git</span>
+            </div>
+          </div>
+        </section>
+
+        <div class="separator" aria-hidden="true"></div>
+
+        <!-- 6. SERVICES: QUIET 3 LINES -->
+        <section class="screen-line-before screen-line-after panel" id="services">
+          <div class="screen-line-after panel-header">
+            <h2 class="panel-title">Offerings</h2>
+          </div>
+          <div class="panel-body">
+            <div class="services-list">
+              <div class="service-row">
+                <div class="service-header-line">
+                  <span class="service-name">Business Websites</span>
+                  <span class="service-price">From ₹22,000</span>
+                </div>
+                <p class="service-desc">
+                  High-converting, mobile-first websites with direct WhatsApp lead flow for growing practices and businesses.
+                </p>
+              </div>
+
+              <div class="service-row">
+                <div class="service-header-line">
+                  <span class="service-name">Custom Pro Engineering</span>
+                  <span class="service-price">Contract / Scope</span>
+                </div>
+                <p class="service-desc">
+                  Production-grade full-stack architectures, RAG pipelines, and AI systems for founders and tech teams.
+                </p>
+              </div>
+
+              <div class="service-row">
+                <div class="service-header-line">
+                  <span class="service-name">Working Demo in 3 Days</span>
+                  <span class="service-price">Zero Risk</span>
+                </div>
+                <p class="service-desc">
+                  Review an interactive, functional prototype for your project before making any financial commitment.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="separator" aria-hidden="true"></div>
+
+        <!-- 7. UNDERSTATED CONTACT -->
+        <section class="screen-line-before screen-line-after panel" id="contact">
+          <div class="screen-line-after panel-header">
+            <h2 class="panel-title">Contact</h2>
+          </div>
+          <div class="panel-body">
+            <p style="font-size: 0.875rem; color: var(--muted-foreground); margin-bottom: 1.25rem; line-height: 1.5;">
+              Open to selective freelance client projects, engineering contracts, and software engineering opportunities.
+            </p>
+
+            <div class="contact-actions">
+              <!-- Preserved WhatsApp link with TODO placeholder -->
+              <a
+                href="https://wa.me/TODO_REPLACE_WITH_PHONE?text=Hi%20Vaibhav%2C%20I%20would%20like%20to%20request%20a%20free%203-day%20demo%20for%20my%20business%20website"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-action btn-whatsapp-action"
+              >
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                </svg>
+                <span>Chat on WhatsApp</span>
+              </a>
+
+              <a href="mailto:vaibhav09012007@gmail.com" class="btn-action btn-secondary-action">
+                <span>vaibhav09012007@gmail.com</span>
+              </a>
+
+              <a
+                href="https://github.com/Vaibhavtiwari-dev"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-action btn-secondary-action"
+              >
+                <span>GitHub ↗</span>
+              </a>
+
+              <a
+                href="https://x.com/AsterismVaibhav"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-action btn-secondary-action"
+              >
+                <span>X ↗</span>
+              </a>
+
+              <a href="resume.html" class="btn-action btn-secondary-action">
+                <span>Resume &amp; CV ↗</span>
+              </a>
+            </div>
+
+            <!-- Single English-plus-Hindi support line -->
+            <div class="support-note">
+              Client communication supported in English and Hindi.
+            </div>
+          </div>
+        </section>
+
+        <div class="separator" aria-hidden="true"></div>
+
+      </div>
+    </main>
+
+    <!-- Site Footer -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="screen-line-before footer-inner">
+        <div class="footer-text">
+          © 2026 Vaibhav Tiwari. Engineered with precision &amp; zero fluff.
+        </div>
+        <div class="footer-links">
+          <a href="#top">Back to top ↑</a>
+          <span style="opacity: 0.35;">•</span>
+          <a href="https://github.com/Vaibhavtiwari-dev" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <span style="opacity: 0.35;">•</span>
+          <a href="resume.html">Resume</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Core Interactions -->
+    <script src="js/main.js" defer></script>
+  </body>
 </html>

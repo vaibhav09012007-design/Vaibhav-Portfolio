@@ -10,17 +10,52 @@
     ],
     "redirects": [
       {
+        "source": "/about",
+        "destination": "/",
+        "type": 301
+      },
+      {
         "source": "/about.html",
         "destination": "/",
         "type": 301
       },
       {
-        "source": "/projects.html",
+        "source": "/services",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/services.html",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/work",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/work.html",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/contact",
         "destination": "/",
         "type": 301
       },
       {
         "source": "/contact.html",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/projects",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/projects.html",
         "destination": "/",
         "type": 301
       }
